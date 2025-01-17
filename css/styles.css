@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.subtitulo-1 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 44px;
+	color: #9b4121;
+	letter-spacing: -0.5px;
+}
+.title-card {
+	font-size: 18px;
+	font-weight: 600;
+}
+.subtitulo-2 {
+	font-size: 24px;
+	font-weight: 500;
+}
+.descripcion {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.boton-fundacion {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: #c95e29;
+	padding: 15px 30px;
+	border-radius: 9999px;
+}
+
+.boton-fundacion-line-rounded {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 15px 30px;
+	border-radius: 9999px;
+}
+
+@media (min-width: 768px) {
+	.subtitulo-2 {
+		font-size: 30px;
+	}
+	.subtitulo-1 {
+		font-size: 40px;
+	}
+}
