@@ -33,7 +33,7 @@
 	text-align: center;
 	font-size: 14px;
 	font-weight: 600;
-	background-color: #c95e29;
+	background-color: #9b4121;
 	padding: 15px 30px;
 	border-radius: 9999px;
 }
@@ -49,11 +49,75 @@
 	border-radius: 9999px;
 }
 
+/* Paginación (puntos) */
+
+.paginacionVidas .swiper-pagination-bullet {
+	background: #faecda !important;
+	/* border: 1px solid #ffffff; */
+	border-radius: 4px !important;
+	transition: background 0.3s ease, width 0.3s ease;
+	width: 100% !important;
+	height: 2px !important;
+	opacity: 0.5 !important;
+	margin: 0 !important;
+}
+
+.paginacionVidas .swiper-pagination-bullet-active {
+	background: #9b4121 !important; /* Color de los puntos activos */
+	opacity: 1 !important;
+	width: 100% !important;
+}
+/*Desactivar boton*/
+.swiper-button-disabled {
+	opacity: 0.3; /* Atenuar los botones */
+	pointer-events: none; /* Deshabilitar la interacción */
+	cursor: not-allowed; /* Cambiar el cursor a "no permitido" */
+}
+
+/*Beneficiarios*/
+
+.mySwiperTab .swiper-slide {
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: transparent;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: 1px solid #ffffff4a;
+	color: white;
+	cursor: pointer;
+}
+.mySwiperTab .swiper-slide.activeBeneficio {
+	transition: font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+.mySwiperTab .swiper-slide-thumb-active.activeBeneficio {
+	font-size: 24px;
+	font-weight: 600;
+	overflow: visible !important;
+}
+.mySwiperTab .swiper-slide-thumb-active.activeBeneficio::before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: url('../img/inicio/arrow.svg') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*este es móvil*/
+
 @media (min-width: 768px) {
 	.subtitulo-2 {
 		font-size: 30px;
 	}
 	.subtitulo-1 {
 		font-size: 40px;
+	}
+	.boton-fundacion {
+		font-size: 16px;
 	}
 }

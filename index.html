@@ -2,145 +2,420 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/output.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Document</title>
 </head>
 
 <body>
   <main>
     <div class="bg-[#FFFDF4]">
-      <section class=" w-full h-[70vh] sm:h-screen relative">
+      <section class="w-full h-[70vh] sm:h-screen relative">
         <video autoplay muted loop id="myVideo" class="min-w-full min-h-full h-full object-cover absolute inset-0">
-          <source src="img/videoEjemplo.mp4" type="video/mp4">
+          <source src="img/videoEjemplo.mp4" type="video/mp4" />
         </video>
         <div class="bg-black/60 absolute inset-0"></div>
         <div
           class="absolute top-1/2 left-1/2 -translate-x-[50%] transform -translate-y-[80%] flex flex-col justify-center items-center text-white z-10 w-full">
-          <div class="relative w-full  lg:max-w-[300px]">
-            <img src="img/inicio/bg-title.svg" class="w-full h-full object-contain absolute inset-0" alt="">
-            <h1 class=" text-[#9B4121] text-[26px] md:text-[50px] text-center relative z-20 font-semibold">100 años</h1>
+          <div class="relative w-full lg:max-w-[300px]">
+            <img src="img/inicio/bg-title.svg" class="w-full h-full object-contain absolute inset-0" alt="" />
+            <h1 class="text-[#9B4121] text-[26px] md:text-[50px] text-center relative z-20 font-semibold">
+              100 años
+            </h1>
           </div>
-          <p class="text-[26px] md:text-[50px] font-semibold text-center leading-tight">Cuidando de...</p>
-
+          <p class="text-[26px] md:text-[50px] font-semibold text-center leading-tight">
+            Cuidando de...
+          </p>
         </div>
-        <img src="img/inicio/bg-separator.svg" class="w-full  object-cover absolute bottom-0 z-10" alt="">
-
+        <img src="img/inicio/bg-separator.svg" class="w-full object-cover absolute bottom-0 z-10" alt="" />
       </section>
-      <section class="py-[80px]">
-        <div class="flex flex-col items-center justify-center gap-[60px] px-[20px]">
-          <div class="flex flex-col items-center justify-center  gap-[12px]">
-            <img src="img/inicio/heart.svg" class="object-cover" alt="">
+      <section class="pt-[30px] px-[20px]">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-[60px] md:gap-[100px] px-[20px] mb-16">
+          <div class="flex flex-col items-center justify-center gap-[12px]">
+            <img src="img/inicio/heart.svg" class="object-cover" alt="" />
             <h3 class="text-center subtitulo-2">Fundación Ignacia</h3>
-            <p class="text-center max-w-[356px] descripcion">
-              “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor nisl id convallis. Fermentum pellentesque
-              tristique massa feugiat tempor. Ac vitae varius neque cras”.
+            <p class="text-center max-w-[356px] md:!text-[16px] lg:!text-[18px] md:max-w-[496px] descripcion mb-[40px]">
+              “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor
+              nisl id convallis. Fermentum pellentesque tristique massa
+              feugiat tempor. Ac vitae varius neque cras”.
             </p>
+            <a href="/" class="boton-fundacion w-min whitespace-nowrap mx-auto">Nuestra historia</a>
           </div>
-          <div>
-            <img src="img/inicio/imagen1Home.png" alt="">
+          <div class="max-w-[463px] w-full">
+            <img src="img/inicio/imagen1Home.png" class="object-cover w-full h-full" alt="" />
           </div>
         </div>
-        <div class="py-[80px]">
-          <div class="flex flex-col items-center justify-center  gap-[12px] mb-[40px] px-[11px]">
-            <h1 class="text-center subtitulo-1 max-w-[653px] mx-auto !leading-tight w-full">Transformando vidas de
-              niños
-              y ancianos vulnerables</h1>
-            <p class="text-center max-w-[356px] descripcion ">
+        <div class="py-[80px] lg:pb-[100px] flex flex-col">
+          <div class="flex flex-col items-center justify-center gap-[12px] mb-[60px] px-[11px]">
+            <h1 class="text-center subtitulo-1 max-w-[653px] mx-auto !leading-tight w-full">
+              Transformando vidas de niños y ancianos vulnerables
+            </h1>
+            <p class="text-center max-w-[356px] md:max-w-[500px] descripcion">
               “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor n
             </p>
           </div>
-          <div class="space-y-6 flex flex-col">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]  px-[20px] max-w-[600px] mx-auto w-full h-full">
-              <div class="max-w-[245px] md:max-w-[350px] w-full  h-full mx-auto">
-                <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="">
-              </div>
-              <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full ">
-                <div class="flex flex-col gap-2">
-                  <h3 class="text-[18px] font-semibold leading-normal text-center md:text-start">“Lorem ipsum dolor sit
-                    amet consectetur. In pellentesque dui odio etiam sem tincidunt. Mauris velit fusce suspendisse
-                    porta.
-                    Nibh”</h3>
-                  <p class="description text-center md:text-start">Lorem ipsum dolor sit amet cons...</p>
+          <div class="w-full max-w-[1250px] mx-auto mb-20 paginacionVidas">
+            <div class="swiper carouselVidasindex">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                    <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                    </div>
+                    <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
+                      <div class="flex flex-col gap-2">
+                        <h3 class="text-[18px] font-semibold leading-normal text-center md:text-start">
+                          “Lorem ipsum dolor sit amet consectetur. In
+                          pellentesque dui odio etiam sem tincidunt. Mauris
+                          velit fusce suspendisse porta. Nibh”
+                        </h3>
+                        <p class="description text-center md:text-start truncate">
+                          Lorem ipsum dolor sit amet cons...
+                        </p>
+                      </div>
+                      <a href=""
+                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
+                        más</a>
+                    </div>
+                  </div>
                 </div>
-                <a href=""
-                  class="border border-black rounded-full py-[6px] px-[20px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
-                  más</a>
-
+                <div class="swiper-slide">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                    <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                    </div>
+                    <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
+                      <div class="flex flex-col gap-2">
+                        <h3 class="text-[18px] font-semibold leading-normal text-center md:text-start">
+                          “Lorem ipsum dolor sit amet consectetur. In
+                          pellentesque dui odio etiam sem tincidunt. Mauris
+                          velit fusce suspendisse porta. Nibh”
+                        </h3>
+                        <p class="description text-center md:text-start truncate">
+                          Lorem ipsum dolor sit amet cons...
+                        </p>
+                      </div>
+                      <a href=""
+                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
+                        más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                    <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                    </div>
+                    <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
+                      <div class="flex flex-col gap-2">
+                        <h3 class="text-[18px] font-semibold leading-normal text-center md:text-start">
+                          “Lorem ipsum dolor sit amet consectetur. In
+                          pellentesque dui odio etiam sem tincidunt. Mauris
+                          velit fusce suspendisse porta. Nibh”
+                        </h3>
+                        <p class="description text-center md:text-start truncate">
+                          Lorem ipsum dolor sit amet cons...
+                        </p>
+                      </div>
+                      <a href=""
+                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
+                        más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                    <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                    </div>
+                    <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
+                      <div class="flex flex-col gap-2">
+                        <h3 class="text-[18px] font-semibold leading-normal text-center md:text-start">
+                          “Lorem ipsum dolor sit amet consectetur. In
+                          pellentesque dui odio etiam sem tincidunt. Mauris
+                          velit fusce suspendisse porta. Nibh”
+                        </h3>
+                        <p class="description text-center md:text-start truncate">
+                          Lorem ipsum dolor sit amet cons...
+                        </p>
+                      </div>
+                      <a href=""
+                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
+                        más</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <a href="/" class="boton-fundacion w-min whitespace-nowrap mx-auto">Ver más</a>
+            <div
+              class="swiper-pagination-vidas flex items-center justify-center mt-10 max-w-[300px] md:max-w-[600px] md:px-20 w-full mx-auto lg:max-w-full">
+            </div>
           </div>
+          <a href="/" class="boton-fundacion w-min whitespace-nowrap mx-auto">Ver más</a>
         </div>
       </section>
-      <section class=" py-[80px] bg-[#C95E29]">
+      <section class="py-[80px] bg-[#C95E29]">
         <div class="px-[20px]">
-          <h2 class="text-center subtitulo-1 !text-white mb-[100px]">Beneficiarios de la Fundación</h2>
-          <div class="flex flex-col gap-[50px]">
-            <div class="flex flex-col gap-5 items-center justify-center">
-              <img src="img/inicio/imagen3.png" class="object-cover" alt="">
-              <h3 class="text-center subtitulo-2 !text-white max-w-[238px] !leading-tight"> Puericultorio Pérez Araníbar
-              </h3>
+          <h2 class="text-center subtitulo-1 !text-white mb-[50px] lg:mb-[80px]">
+            Beneficiarios de la Fundación
+          </h2>
+
+          <div
+            class="max-w-[1200px] overflow-hidden hidden lg:flex items-center lg:gap-16 xl:gap-20 mx-auto w-full lg:h-[700px] xl:h-[600px] relative">
+            <div class="ContentHomeBeneficios flex-1 !h-full">
+              <img src="img/inicio/adorno.svg" class="object-cover absolute top-[10%] left-0" alt="" />
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-start">
+                    <img src="img/inicio/imagen3.png" class="object-cover" alt="" />
+                    <a href=""
+                      class="border border-white rounded-full py-[14px] px-[16px] text-white hidden md:block w-min max-md:mx-auto whitespace-nowrap">Conocer
+                      más</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <a href="" class="boton-fundacion-line-rounded mx-auto w-min whitespace-nowrap"> Conocer más</a>
+            <div class="mySwiperTab w-1/2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide activeBeneficio">
+                  01. Puericultorio Pérez Araníbar
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  02. Hogar “Ignacia Rodulfo Vda de Canevaro”
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  03.Asilo de las Hermanitas de los Ancianos Desamparados
+                  (Lima)
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  04.Asilo de las Hermanitas de los Ancianos Desamparados
+                  (Callao)
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  05.Hogar de la Paz - Misioneras de la Caridad (Lima)
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  06.CEBE 07 La Inmaculada
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  07.CEBE 07 La Inmaculada
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  08.CEBE 09 San Francisco de Asís
+                </div>
+                <div class="swiper-slide activeBeneficio">
+                  09.Instituto Nacional de Ciencias Neurológicas
+                </div>
+              </div>
+            </div>
           </div>
 
+          <!-- version  movil -->
+          <div class="relative overflow-hidden block lg:hidden w-full">
+            <img src="img/inicio/adorno.svg" class="object-cover absolute top-[0%] left-[3%] sm:left-[10%]" alt="" />
+
+            <div class="carouselMovilBeneficiarios !w-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-center">
+                    <img src="img/inicio/imagen3.png" class="object-cover mb-10" alt="" />
+                    <h3
+                      class="text-center subtitulo-2 !text-white max-w-[238px] md:max-w-full !leading-tight mb-[135px]">
+                       Puericultorio Pérez Araníbar
+                    </h3>
+
+                    <a href="" class="boton-fundacion-line-rounded mx-auto w-min whitespace-nowrap">
+                      Conocer más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-center">
+                    <img src="img/inicio/imagen3.png" class="object-cover mb-10" alt="" />
+                    <h3
+                      class="text-center subtitulo-2 !text-white max-w-[238px] md:max-w-full !leading-tight mb-[135px]">
+                       Puericultorio Pérez Araníbar
+                    </h3>
+
+                    <a href="" class="boton-fundacion-line-rounded mx-auto w-min whitespace-nowrap">
+                      Conocer más</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex flex-col items-center h-full justify-center">
+                    <img src="img/inicio/imagen3.png" class="object-cover mb-10" alt="" />
+                    <h3
+                      class="text-center subtitulo-2 !text-white max-w-[238px] md:max-w-full !leading-tight mb-[135px]">
+                       Puericultorio Pérez Araníbar
+                    </h3>
+
+                    <a href="" class="boton-fundacion-line-rounded mx-auto w-min whitespace-nowrap">
+                      Conocer más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center absolute bottom-24 left-1/2 transform -translate-x-[50%] gap-6 z-10">
+              <div class="swiper-button-prev-beneficiarios !block">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="white" />
+                  <path d="M18.834 27L25.834 20M18.834 27L25.834 34M18.834 27H35.1673" stroke="white"
+                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div
+                class="swiper-pagination-beneficiarios !flex items-center justify-center text-[24px] !text-white !font-semibold">
+              </div>
+              <div class="swiper-button-next-beneficiarios !block">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="27" cy="27" r="26.5" stroke="white" />
+                  <path d="M35.166 27L28.166 20M35.166 27L28.166 34M35.166 27H18.8327" stroke="white"
+                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="py-[80px]">
-        <div class="px-[20px]">
+        <div class="px-[20px] flex flex-col">
           <h2 class="text-center subtitulo-1 mb-[54px]">Actividades</h2>
-          <div class="flex flex-col gap-[50px]">
-            <div class="flex flex-col items-start justify-start ">
-              <div class=" max-w-[352px] w-full mb-[20px]">
-                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="">
+          <div class="flex flex-col justify-center items-center lg:flex-row gap-[50px] mb-20">
+            <div class="flex flex-col items-start justify-start max-w-[370px]">
+              <div class="max-w-[352px] w-full mb-[20px]">
+                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="" />
               </div>
               <div class="flex items-center gap-[20px] mb-[10px]">
                 <span class="text-[14px] font-medium bg-[#FFEAA4] px-[11px] py-[6px] rounded-full">Eventos</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/calendar-ico.svg"
-                    class="object-cover" alt="">23 Julio</span>
+                    class="object-cover" alt="" />23 Julio</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/reloj-ico.svg"
-                    class="object-cover" alt=""> 3
-                  min</span>
+                    class="object-cover" alt="" />
+                  3 min</span>
               </div>
-              <h3 class="title-card">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 class="title-card">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p class="descripcion text-[#414141] mt-[7px] hidden md:block">
+                “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor...
+              </p>
             </div>
-            <div class="flex flex-col items-start justify-start ">
-              <div class=" max-w-[352px] w-full mb-[20px]">
-                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="">
+            <div class="flex flex-col items-start justify-start max-w-[370px]">
+              <div class="max-w-[352px] w-full mb-[20px]">
+                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="" />
               </div>
               <div class="flex items-center gap-[20px] mb-[10px]">
                 <span class="text-[14px] font-medium bg-[#FFEAA4] px-[11px] py-[6px] rounded-full">Eventos</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/calendar-ico.svg"
-                    class="object-cover" alt="">23 Julio</span>
+                    class="object-cover" alt="" />23 Julio</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/reloj-ico.svg"
-                    class="object-cover" alt=""> 3
-                  min</span>
+                    class="object-cover" alt="" />
+                  3 min</span>
               </div>
-              <h3 class="title-card">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 class="title-card">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p class="descripcion text-[#414141] mt-[7px] hidden md:block">
+                “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor...
+              </p>
             </div>
-            <div class="flex flex-col items-start justify-start ">
-              <div class=" max-w-[352px] w-full mb-[20px]">
-                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="">
+            <div class="flex flex-col items-start justify-start max-w-[370px]">
+              <div class="max-w-[352px] w-full mb-[20px]">
+                <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="" />
               </div>
               <div class="flex items-center gap-[20px] mb-[10px]">
                 <span class="text-[14px] font-medium bg-[#FFEAA4] px-[11px] py-[6px] rounded-full">Eventos</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/calendar-ico.svg"
-                    class="object-cover" alt="">23 Julio</span>
+                    class="object-cover" alt="" />23 Julio</span>
                 <span class="flex items-center gap-2 text-[14px]"><img src="img/inicio/reloj-ico.svg"
-                    class="object-cover" alt=""> 3
-                  min</span>
+                    class="object-cover" alt="" />
+                  3 min</span>
               </div>
-              <h3 class="title-card">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 class="title-card">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p class="descripcion text-[#414141] mt-[7px] hidden md:block">
+                “Lorem ipsum dolor sit amet consectetur. Sem justo eget tempor...
+              </p>
             </div>
           </div>
-
+          <a href="/" class="boton-fundacion w-min whitespace-nowrap mx-auto">Más actividades de la fundación</a>
         </div>
       </section>
     </div>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
