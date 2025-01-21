@@ -74,6 +74,24 @@
 	cursor: not-allowed; /* Cambiar el cursor a "no permitido" */
 }
 
+/*Asilo*/
+.paginacionAsiloLima .swiper-pagination-bullet {
+	background: transparent !important;
+	/* border: 1px solid #ffffff; */
+	border-radius: 9999px !important;
+	transition: background 0.3s ease, width 0.3s ease;
+	width: 20px !important;
+	height: 20px !important;
+	opacity: 0.5 !important;
+	border: 1px solid #9b4121;
+}
+
+.paginacionAsiloLima .swiper-pagination-bullet-active {
+	background: #9b4121 !important; /* Color de los puntos activos */
+	opacity: 1 !important;
+	width: 20px !important;
+}
+
 /*Beneficiarios*/
 
 .mySwiperTab .swiper-slide {
@@ -118,6 +136,9 @@
 		font-size: 40px;
 	}
 	.boton-fundacion {
+		font-size: 16px;
+	}
+	.descripcion {
 		font-size: 16px;
 	}
 }

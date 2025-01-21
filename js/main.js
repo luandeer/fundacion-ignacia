@@ -69,6 +69,90 @@ function initCarousels() {
       centeredSlides: false,
     });
   }
+  const carouselAsilo = document.querySelector('.carouselAsiloLima');
+  if (carouselAsilo) {
+    new Swiper('.carouselAsiloLima', {
+      loop: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: '.swiper-pagination-vidas',
+      //   clickable: true,
+      // },
+      // navigation: {
+      //   nextEl: '.custom-next-historia',
+      //   prevEl: '.custom-prev-historia',
+      //   disabledClass: 'swiper-button-disabled',
+      // },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.5,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 1.8,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 2.8,
+          spaceBetween: 40,
+        },
+        1280: {
+          slidesPerView: 3.8,
+          spaceBetween: 40,
+        }
+
+
+      },
+      effect: 'slide',
+      centeredSlides: false,
+    });
+  }
+
+  const carruselAsiloBeneficiarios = document.querySelector('.carouselAsiloBeneficiarios');
+  if (carruselAsiloBeneficiarios) {
+    new Swiper('.carouselAsiloBeneficiarios', {
+      loop: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-beneficiarios-asilo',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.custom-next-historia-beneficiarios-asilo',
+        prevEl: '.custom-prev-historia-beneficiarios-asilo',
+        disabledClass: 'swiper-button-disabled',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        }
+
+
+      },
+      effect: 'slide',
+      centeredSlides: false,
+    });
+  }
 
 
   const carouselBeneficiariosMovil = document.querySelector('.carouselMovilBeneficiarios');
