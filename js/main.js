@@ -154,6 +154,87 @@ function initCarousels() {
     });
   }
 
+  const carruselDestacadosImpactoo = document.querySelector('.carouselDestacadosImpacto');
+  if (carruselDestacadosImpactoo) {
+    new Swiper('.carouselDestacadosImpacto', {
+      loop: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-destacados-impacto',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.custom-next-historia-destacados-impacto',
+        prevEl: '.custom-prev-historia-destacados-impacto',
+        disabledClass: 'swiper-button-disabled',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+
+        1024: {
+          slidesPerView: 1.8,
+          spaceBetween: 40,
+        },
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        }
+
+
+      },
+      effect: 'slide',
+      centeredSlides: false,
+    });
+  }
+
+  const carruselActividad = document.querySelector('.carruselActividad');
+  if (carruselActividad) {
+    new Swiper('.carruselActividad', {
+      loop: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-actividad-evento',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.custom-next-historia-actividad-evento',
+        prevEl: '.custom-prev-historia-actividad-evento',
+        disabledClass: 'swiper-button-disabled',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        }
+
+
+      },
+      effect: 'slide',
+      centeredSlides: false,
+    });
+  }
+
 
   const carouselBeneficiariosMovil = document.querySelector('.carouselMovilBeneficiarios');
   if (carouselBeneficiariosMovil) {
