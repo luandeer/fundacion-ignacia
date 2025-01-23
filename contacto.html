@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>asilo</title>
+</head>
+
+<body>
+  <main>
+    <div class="bg-[#FFFDF4] px-[20px]">
+      <section class="pt-[80px] relative mb-10">
+        <div class="max-w-[1100px] mx-auto grid md:grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2">
+          <div class="mx-auto w-full">
+            <h1 class="text-center lg:text-start subtitulo-1 !leading-tight mb-[30px]">
+              Contáctanos
+            </h1>
+
+            <div class="flex flex-col items-center justify-center lg:items-start lg:justify-start gap-2.5">
+              <h2 class="text-[18px] text-center lg:text-start font-semibold"> Atención</h2>
+              <div class="flex items-center gap-2.5">
+                <img src="img/contacto/tel.svg" alt="" />
+                <span>331 1941 -  331 1962</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <img src="img/contacto/message.svg" alt="" />
+                <span>informes@fundacionignacia.org.pe</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="space-y-4">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
+              <div
+                class="unique-select-trigger cursor-pointer font-inter text-black text-[16px] relative rounded-[6px] h-[58px] w-full flex items-center gap-0 bg-transparent border border-black px-4 text-left focus:outline-none"
+                aria-haspopup="listbox" aria-expanded="false">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  Perú
+                  <!-- Valor predeterminado -->
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
+                  <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="" />
+                </span>
+              </div>
+              <ul
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                role="listbox"></ul>
+              <input type="hidden" name="paisWeb" value="Perú" />
+              <!-- Valor predeterminado -->
+            </div>
+
+            <div class="input-wrapper font-inter">
+              <input type="text" id="nombre" placeholder=" " />
+              <label class="hidden md:block" for="nombre">Nombre completo/Nombre de empresa</label>
+              <label class="block md:hidden" for="nombre">Nombre completo</label>
+            </div>
+            <div class="input-wrapper font-inter">
+              <input type="email" id="email" placeholder="" />
+              <label for="email">Correo electrónico</label>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div class="input-wrapper font-inter">
+                <input type="text" id="nombre" placeholder=" " />
+                <label for="nombre">Teléfono</label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+              <div class="flex items-center mb-4">
+                <div class="checkbox-wrapper-65 !mb-4">
+                  <label for="cbk1-65" class="!flex">
+                    <input id="cbk1-65" type="checkbox">
+                    <span class="cbx">
+                      <svg viewBox="0 0 12 11" height="11px" width="12px">
+                        <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
+                      </svg>
+                    </span>
+                    <span class=" descripcion-v1 !text-[14px] !leading-normal pl-1">He leído y acepto las <a href="#"
+                        class="font-semibold text-black underline">políticas y
+                        privacidad</a></span>
+                  </label>
+                </div>
+              </div>
+
+              <a href="/" class="boton-fundacion w-min mx-auto whitespace-nowrap ">Enviar</a>
+
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="py-[80px] relative mb-10">
+        <div class="max-w-[1100px] mx-auto gap-10 lg:gap-0 md:grid-cols-1 grid lg:grid-cols-2">
+          <div class="mx-auto flex flex-col w-full justify-center items-center lg:justify-start lg:items-start">
+            <h1 class="text-center lg:text-start text-[18px] font-semibold leading-tight mb-[10px]">
+              Ubicación
+            </h1>
+
+            <p class="text-[16px] font-normal text-center lg:text-start max-w-[382px] mb-6">
+              Para mayor información acerca de nosotros, visítenos en Washington 1544 Cercado de Lima 15046, Lima - Perú
+            </p>
+            <a href=""
+              class="boton-fundacion-line-rounded !font-medium  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
+              Ver en Google maps</a>
+          </div>
+
+          <div
+            class="flex-1 md:rounded-xl overflow-hidden border border-[#f1e5cf] shadow-lg  w-full lg:h-[400px] md:mr-8">
+            <iframe width="100%" height="500px" title="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.7253327203925!2d-76.83261352397975!3d-12.266857446039706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bdb546a77a97%3A0xf75aab74c0cecef2!2sSAR%20AMBIENTAL%20S.A.!5e0!3m2!1sen!2spe!4v1716487353200!5m2!1sen!2spe"
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

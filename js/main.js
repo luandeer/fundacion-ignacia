@@ -296,3 +296,64 @@ document.addEventListener('DOMContentLoaded', () => {
   initSwiperTabs();
 
 });
+
+
+/* Select personalizado solo con nombres */
+/* Select personalizado solo con nombres */
+document.addEventListener("DOMContentLoaded", () => {
+  const selectContainers = document.querySelectorAll(".unique-select-container");
+
+  // JSON de países
+  const countries = [
+    { "nombre": "Persona Natural" },
+    { "nombre": "Personal Juridica" },
+
+  ];
+
+  selectContainers.forEach((container) => {
+    const trigger = container.querySelector(".unique-select-trigger");
+    const optionsList = container.querySelector(".unique-select-options");
+    const hiddenInput = container.querySelector("input[type='hidden']");
+    const display = trigger.querySelector(".unique-select-display");
+
+    // Función para generar las opciones
+    const generateOptions = () => {
+      optionsList.innerHTML = ''; // Limpiar las opciones actuales
+      countries.forEach((country) => {
+        const option = document.createElement('li');
+        option.classList.add('unique-select-option', 'px-4', 'py-2', 'hover:bg-[#EEEEEE]', 'cursor-pointer', 'text-[16px]', 'text-black');
+        option.textContent = country.nombre;
+        optionsList.appendChild(option);
+
+        // Agregar evento de selección
+        option.addEventListener("click", () => {
+          const selectedName = country.nombre;
+
+          // Actualiza la visualización del botón
+          display.textContent = selectedName;
+
+          // Establecer el valor oculto
+          hiddenInput.value = selectedName;
+
+          // Cierra el menú
+          optionsList.classList.add("hidden");
+        });
+      });
+    };
+
+    // Inicializar el select con las opciones generadas
+    generateOptions();
+
+    // Abre o cierra el menú al hacer clic en el botón
+    trigger.addEventListener("click", () => {
+      optionsList.classList.toggle("hidden");
+    });
+
+    // Cierra el menú al hacer clic fuera del contenedor
+    document.addEventListener("click", (event) => {
+      if (!container.contains(event.target)) {
+        optionsList.classList.add("hidden");
+      }
+    });
+  });
+});
