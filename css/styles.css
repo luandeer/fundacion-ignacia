@@ -8,6 +8,23 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+.fondoHeader {
+	background-color: #fffdf4;
+	filter: drop-shadow(-4px 0px 9px rgba(71, 27, 10, 0.1))
+		drop-shadow(-17px 0px 17px rgba(71, 27, 10, 0.09))
+		drop-shadow(-38px 0px 23px rgba(71, 27, 10, 0.05))
+		drop-shadow(-67px 0px 27px rgba(71, 27, 10, 0.01))
+		drop-shadow(-105px 0px 29px rgba(71, 27, 10, 0));
+}
+
+.link-nav-style {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 29px; /* 181.25% */
+}
+
 .subtitulo-1 {
 	font-size: 32px;
 	font-weight: 700;
@@ -47,6 +64,135 @@
 	border: 1px solid white;
 	padding: 15px 30px;
 	border-radius: 9999px;
+}
+
+/*modal galeria*/
+.modal {
+	display: none; /* Oculto por defecto */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+}
+
+.modal-content {
+	background: transparent;
+	border-radius: 15px;
+	width: 100%;
+	max-width: 330px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	cursor: pointer;
+	display: none;
+}
+
+.close:hover {
+	color: red;
+}
+
+/*Galeria de imagenes*/
+.image-slider {
+	position: relative;
+	width: 100%;
+	box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4);
+}
+.slider-info {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.2rem;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.image-slider .images {
+	width: 100%;
+	height: 493px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+}
+.image-slider .images img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transform: scale(1.1);
+	transition: all 500ms ease-in-out;
+}
+.image-slider .images img.active {
+	opacity: 1;
+	transform: scale(1);
+}
+.image-slider .back-btn,
+.image-slider .next-btn {
+	position: absolute;
+	width: 40px;
+	top: 40%;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+.image-slider .next-btn {
+	right: 25px;
+}
+.image-slider .back-btn {
+	left: 25px;
+}
+
+.image-slider .thumbnails {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	gap: 3px;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+
+	/* Ocultar barra de desplazamiento */
+	scrollbar-width: none; /* Para Firefox */
+	-ms-overflow-style: none; /* Para IE y Edge */
+}
+
+.image-slider .thumbnails::-webkit-scrollbar {
+	display: none; /* Para Chrome, Safari y Edge */
+}
+.image-slider .thumbnails img {
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	object-fit: cover;
+}
+.image-slider .thumbnails img.active {
+	border: 2px solid #fff;
+}
+/*Arrows de galleria*/
+.custom-next,
+.custom-prev {
+	background-color: #ffffff; /* Fondo blanco del contenedor */
+	border-radius: 50%; /* Hace que sea un círculo */
+	width: 50px; /* Tamaño del círculo */
+	height: 50px;
+	display: flex; /* Centra el contenido */
+	align-items: center; /* Centrado vertical */
+	justify-content: center; /* Centrado horizontal */
 }
 
 /* Paginación (puntos) */
@@ -271,6 +417,11 @@
 }
 
 /*este es móvil*/
+@media (min-width: 500px) {
+	.modal-content {
+		max-width: 450px;
+	}
+}
 
 @media (min-width: 768px) {
 	.subtitulo-2 {
@@ -284,5 +435,13 @@
 	}
 	.descripcion {
 		font-size: 16px;
+	}
+	.modal-content {
+		max-width: 650px;
+	}
+}
+@media (min-width: 1024px) {
+	.modal-content {
+		max-width: 750px;
 	}
 }

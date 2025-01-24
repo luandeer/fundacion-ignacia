@@ -1,4 +1,160 @@
 
+
+
+//modal
+
+(() => {
+  function toggleModal(modalId, action) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      if (action === "open") {
+        modal.classList.remove("hidden");
+        modal.style.display = "flex";
+      } else if (action === "close") {
+        modal.classList.add("hidden");
+        modal.style.display = "none";
+      }
+    }
+  }
+
+  function initializeModal() {
+    document.querySelectorAll(".open-modal").forEach(button => {
+      button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal");
+        toggleModal(modalId, "open");
+      });
+    });
+
+    document.querySelectorAll(".close-modal").forEach(button => {
+      button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal");
+        toggleModal(modalId, "close");
+      });
+    });
+
+    window.addEventListener("click", (e) => {
+      document.querySelectorAll(".modal").forEach(modal => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          modal.style.display = "none";
+        }
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", initializeModal);
+})();
+
+(() => {
+  let images = [
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2022/10/02/06/42/blackout-7492849_1280.png",
+    "https://cdn.pixabay.com/photo/2017/07/04/09/06/houses-2470398_1280.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/05/25/14/19/classic-5218823_960_720.jpg",
+    // Agrega más imágenes si es necesario
+  ];
+
+  function imageSlider(parent, images) {
+    let currentImage = 0;
+
+    let slider = {
+      parent: parent,
+      images: parent.querySelector(".images"),
+      thumbnails: parent.querySelector(".thumbnails"),
+      backBtn: parent.querySelector(".back-btn .custom-prev"),
+      nextBtn: parent.querySelector(".next-btn .custom-next"),
+      imageIndex: parent.querySelector(".image-index"),  // Nuevo elemento para el numeral
+    };
+
+    // Insertar imágenes grandes
+    slider.images.innerHTML = images.map(image => `<img src="${image}" />`).join("");
+    let imageNodes = slider.images.querySelectorAll("img");
+    imageNodes[currentImage].classList.add("active");
+
+    // Insertar miniaturas
+    slider.thumbnails.innerHTML = images.map(image => `<img src="${image}" />`).join("");
+    let thumbnailNodes = slider.thumbnails.querySelectorAll("img");
+    thumbnailNodes[currentImage].classList.add("active");
+
+    // Función para actualizar el numeral
+    function updateImageIndex() {
+      slider.imageIndex.textContent = `${currentImage + 1}/${images.length}`;
+    }
+
+    // Actualizar el numeral al inicio
+    updateImageIndex();
+
+    // Desplazar miniaturas
+    function scrollToThumbnail(index) {
+      const activeThumbnail = thumbnailNodes[index];
+      const thumbnailContainer = slider.thumbnails;
+
+      const containerRightEdge = thumbnailContainer.scrollLeft + thumbnailContainer.offsetWidth;
+      const thumbnailRightEdge = activeThumbnail.offsetLeft + activeThumbnail.offsetWidth;
+
+      if (thumbnailRightEdge > containerRightEdge) {
+        thumbnailContainer.scrollTo({
+          left: thumbnailRightEdge - thumbnailContainer.offsetWidth,
+          behavior: "smooth",
+        });
+      } else if (activeThumbnail.offsetLeft < thumbnailContainer.scrollLeft) {
+        thumbnailContainer.scrollTo({
+          left: activeThumbnail.offsetLeft,
+          behavior: "smooth",
+        });
+      }
+    }
+
+    // Clic en miniaturas
+    thumbnailNodes.forEach((thumbnail, i) => {
+      thumbnail.addEventListener("click", () => {
+        imageNodes[currentImage].classList.remove("active");
+        slider.thumbnails.querySelector("img.active").classList.remove("active");
+        currentImage = i;
+        imageNodes[currentImage].classList.add("active");
+        thumbnail.classList.add("active");
+
+        scrollToThumbnail(currentImage);
+        updateImageIndex();  // Actualizar numeral
+      });
+    });
+
+    // Botón "Atrás"
+    slider.backBtn.addEventListener("click", () => {
+      imageNodes[currentImage].classList.remove("active");
+      currentImage = (currentImage - 1 + images.length) % images.length;
+      imageNodes[currentImage].classList.add("active");
+      slider.thumbnails.querySelector("img.active").classList.remove("active");
+      thumbnailNodes[currentImage].classList.add("active");
+
+      scrollToThumbnail(currentImage);
+      updateImageIndex();  // Actualizar numeral
+    });
+
+    // Botón "Siguiente"
+    slider.nextBtn.addEventListener("click", () => {
+      imageNodes[currentImage].classList.remove("active");
+      currentImage = (currentImage + 1) % images.length;
+      imageNodes[currentImage].classList.add("active");
+      slider.thumbnails.querySelector("img.active").classList.remove("active");
+      thumbnailNodes[currentImage].classList.add("active");
+
+      scrollToThumbnail(currentImage);
+      updateImageIndex();  // Actualizar numeral
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    imageSlider(document.querySelector(".image-slider"), images);
+  });
+})();
+
+
 function initSwiperTabs() {
   let swiperTab, swiper;
   if (!swiperTab && !swiper) { // Verifica si los Swipers ya están inicializados
