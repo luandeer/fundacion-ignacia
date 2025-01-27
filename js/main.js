@@ -1,6 +1,47 @@
 
 
 
+//accordion responsive
+
+
+
+//menu responsive
+// Función para inicializar el menú
+function initResponsiveMenu() {
+  const btnMenu = document.getElementById("btn_menu");
+  const menuResponsive = document.getElementById("menu-responsive");
+
+  if (btnMenu && menuResponsive) {
+    btnMenu.addEventListener("change", function () {
+      if (btnMenu.checked) {
+        showMenu(menuResponsive);
+      } else {
+        hideMenu(menuResponsive);
+      }
+    });
+  }
+}
+
+function showMenu(menu) {
+  menu.classList.add("open"); // Abre el menú añadiendo la clase 'open'
+  document.body.classList.add("overflow-hidden"); // Evitar desplazamiento detrás del menú
+}
+
+function hideMenu(menu) {
+  menu.classList.remove("open"); // Cierra el menú quitando la clase 'open'
+  document.body.classList.remove("overflow-hidden"); // Permitir desplazamiento
+}
+
+function toggleSubmenu(event) {
+  const submenu = event.target.nextElementSibling; // Obtiene el siguiente elemento (el submenu)
+  submenu.classList.toggle("open"); // Alterna la visibilidad del submenu
+}
+
+// Inicializar el menú responsive
+initResponsiveMenu();
+
+
+
 //modal
 
 (() => {
@@ -454,7 +495,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* Select personalizado solo con nombres */
+
+
+
 /* Select personalizado solo con nombres */
 document.addEventListener("DOMContentLoaded", () => {
   const selectContainers = document.querySelectorAll(".unique-select-container");
@@ -513,3 +556,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleSubmenu(event) {
+  event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+
+  // Obtener el botón clickeado y el submenú
+  const button = event.currentTarget;
+  const submenu = button.nextElementSibling; // Seleccionamos el siguiente hermano (el submenú)
+  const iconRotate = button.querySelector(".icon-rotate"); // El icono dentro del botón
+
+  // Alternar visibilidad del submenú y la rotación del icono
+  submenu.classList.toggle("hidden"); // Alternar clase para mostrar/ocultar el submenú
+  iconRotate.classList.toggle("rotate-90"); // Alternar rotación del ícono
+}

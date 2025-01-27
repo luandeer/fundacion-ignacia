@@ -11,8 +11,210 @@
 </head>
 
 <body>
+  <header class="fondoHeader sticky top-0 z-[20] ">
+    <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
+      <a href="/">
+        <div class="max-w-[151px] min-w-[151px]">
+          <img src="img/logo.svg" class="w-full object-cover" alt="">
+        </div>
+      </a>
+      <nav class="w-full hidden lg:block h-full">
+        <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
+          <li class="menu-item h-full flex items-center">
+            <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
+              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+            <div class="submenu-list">
+              <ul class="max-w-[1440px] mx-auto">
+                <li class="submenu-item ">
+                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                  <a href="/fundadora.html" class="submenu-link">Nuestra historia</a>
+                </li>
+                <li class="submenu-item">
+                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                  <a href="/programasocial.html" class="submenu-link">Programa social</a>
+                </li>
+                <li class="submenu-item">
+                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                  <a href="/nuestroImpacto.html" class="submenu-link"> Nuestro impacto</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-item h-full flex items-center">
+            <span href="#"
+              class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
+              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+            <div class="submenu-list">
+              <div class="max-w-[1440px] mx-auto flex items-start">
+                <div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link">
+                      Puericultorio Pérez Araníbar</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link"> Hogar
+                      Ignacia Rodulfo Vda de Canevaro</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/asiloLima.html" class="submenu-link"> Asilo de
+                      las Hermanitas de los Ancianos Desamparados (Lima)</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link">Asilo de
+                      las
+                      Hermanitas de los Ancianos Desamparados (Callao)</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="submenu-item ">
+                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                    <a href="#" class="submenu-link">
+                      Hogar de la Paz - Misioneras de la Caridad (Lima)</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link">Hogar de
+                      las Misioneras de la Caridad (Cusco)</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link"> CEBE 07
+                      La Inmaculada</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link">CEBE 09
+                      San Francisco de Asís</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="submenu-item ">
+                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                    <a href="#" class="submenu-link">
+                      Instituto Nacional de Ciencias Neurológicas</a>
+                  </div>
+                  <div class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="#" class="submenu-link">Iglesia de San Pedro</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
+          <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
+          <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hidden lg:flex items-center">
+        <a href="/inmueblesAlquiler.html"
+          class="animated-button !w-min whitespace-nowrap !text-[15px] xl:!text-[16px] max-xl:!px-[14px] !font-medium  mx-auto">
+          <span>Inmuebles
+            en
+            alquiler</span>
+          <span></span>
+        </a>
+      </div>
+
+
+      <div class="block lg:hidden">
+
+        <label class="burger" for="btn_menu">
+          <input type="checkbox" id="btn_menu">
+          <span class="burger-bar bg-black"></span>
+          <span class="burger-bar bg-black"></span>
+          <span class="burger-bar bg-black"></span>
+        </label>
+
+      </div>
+
+    </div>
+    <!-- Menú de móvil -->
+
+
+  </header>
+
   <main>
-    <div class="bg-[#FFFDF4]">
+    <div class="bg-[#FFFDF4] relative overflow-hidden">
+      <div id="menu-responsive"
+        class="absolute z-10 bg-[#FFFDF4] transform translate-x-full transition-transform duration-300 h-[calc(100vh-80px)] ease-in-out w-full pointer-events-auto">
+        <div class="h-full flex flex-col justify-between">
+          <div class="flex flex-col">
+            <a href="/nosotros.html"
+              class="w-full flex justify-between items-center py-4 px-4 border-b border-[#9F9A8F]">
+              <p class="font-medium text-[14px] md:text-[20px] text-black">Nosotros</p>
+              <img src="img/arrow.svg" class="w-[26px]" />
+            </a>
+
+            <div class="relative">
+              <a href="#" onclick="toggleSubmenu(event)"
+                class="w-full flex justify-between items-center py-4 px-4 border-b border-[#9F9A8F] font-normal text-[14px] md:text-[20px] text-black">
+                Beneficiarios
+                <img src="img/arrow.svg" class="w-[26px] transform transition-all duration-300 icon-rotate" />
+              </a>
+              <div class="hidden  w-full bg-[#C95E29]">
+                <a href="/propiedades.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Puericultorio Pérez Araníbar
+                </a>
+                <a href="/guiaparacomprar.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Hogar Ignacia Rodulfo Vda de Canevaro </a>
+                <a href="/guiaparacomprar.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Asilo de las Hermanitas de los Ancianos Des... </a>
+                <a href="/guiaparacomprar.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Hogar de la Paz - Misioneras de la Caridad (Lima) </a>
+                <a href="/guiaparacomprar.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Hogar de las Misioneras de la Caridad (Cusco) </a>
+                <a href="/guiaparacomprar.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  CEBE 07 La Inmaculada </a>
+              </div>
+            </div>
+
+            <div class="relative">
+              <a href="#" onclick="toggleSubmenu(event)"
+                class="w-full flex justify-between items-center py-4 px-4 border-b border-[#9F9A8F] font-normal text-[14px] md:text-[20px] text-black">
+                Nuestra historia
+                <img src="img/arrow.svg" class="w-[26px] transform transition-all duration-300 icon-rotate" />
+              </a>
+              <div class="hidden w-full bg-[#C95E29]">
+                <a href="/programasocial.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Programa social
+                </a>
+                <a href="/nuestroImpacto.html"
+                  class="text-[12px] text-white px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between border-b border-white">
+                  Nuestro impacto
+                </a>
+              </div>
+            </div>
+
+
+            <a href="/contacto.html"
+              class="w-full flex justify-between items-center py-4 px-4 border-b border-[#9F9A8F]">
+              <p class="font-normal md:font-medium text-[14px] md:text-[20px] text-black">Contáctanos</p>
+              <img src="img/arrow.svg" class="w-[26px]" />
+            </a>
+            <a href="/inmueblesAlquiler.html"
+              class="w-full flex justify-between items-center py-4 px-4 border-b border-[#9F9A8F]">
+              <p class="font-normal md:font-medium text-[14px] md:text-[20px] text-black">Inmuebles en alquiler</p>
+              <img src="img/arrow.svg" class="w-[26px]" />
+            </a>
+
+          </div>
+        </div>
+      </div>
 
 
       <section class="py-[80px]">
@@ -98,7 +300,81 @@
 
     </div>
   </main>
+  <footer class="bg-[#C95E29] w-full relative h-full lg:h-[659px] flex items-center pt-40 lg:pt-28">
+    <div class="max-w-[200px] absolute top-[50px] left-[50%] z-10 transform -translate-x-[50%] w-full mx-auto">
+      <img src="img/logoWhite.svg" class="w-full object-cover " alt="">
+    </div>
+    <div class=" flex lg:flex-row flex-col w-full max-w-[1440px] mx-auto   ">
+      <div class="w-full h-full">
+        <div class="flex flex-col justify-center gap-12 w-full px-[20px]">
+          <div>
+            <div class="flex flex-col lg:flex-row items-start gap-[10px] lg:gap-[40px] text-white">
+              <div class="flex items-end gap-4 max-w-[120px] w-full">
+                <img src="img/footer/fundacionIco.svg" alt="">
+                <h4 class="leading-none font-semibold">Fundación</h4>
+              </div>
+              <ul class="flex flex-col gap-[10px] text-[14px] pl-[42px] lg:pl-0 text-[#FFFAF3]">
+                <li class="h-[27px] flex items-end mb-0.5"><a href="/nuestroImpacto.html" class="leading-none ">
+                    Nuestra historia</a></li>
+                <li><a href="/nuestroImpacto.html">fundadora</a></li>
+                <li>Programa social</li>
+                <li>Actividades</li>
+                <li>Cómo ayudar</li>
+              </ul>
+            </div>
 
+          </div>
+          <div>
+            <div class="flex flex-col lg:flex-row items-start gap-[10px] lg:gap-[40px] text-white">
+              <div class="flex items-end gap-4  max-w-[120px] w-full">
+                <img src="img/footer/fundacionIco.svg" alt="">
+                <h4 class="leading-none font-semibold">Contacto</h4>
+              </div>
+              <ul class="flex flex-col gap-[10px] text-[14px] pl-[42px] lg:pl-0 text-[#FFFAF3]">
+                <li class="max-w-[250px] h-[49px] flex items-end mb-0.5">Dirección: Washington 1544 Cercado de Lima
+                  15046, Lima Perú</li>
+                <li>Teléfono: 331 1941/ 331 1962</li>
+                <li>E-mail: informes@fundacionignacia.org.pe</li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="flex items-center gap-10">
+            <span class="text-white max-w-[120px] w-full  text-end">
+              ¡Síguenos!
+            </span>
+            <div> <img src="img/footer/redes.svg" alt=""></div>
+          </div>
+          <p class="text-[14px] text-[#FFFAF3] w-full hidden lg:flex items-center gap-1">Fundación Ignacia ©2024 Todos
+            lo derechos
+            reservados | <span class="flex items-center gap-1 text-[10px]">MADE WITH
+              <img src="img/footer/heart.svg" alt=""> <img src="img/footer/nerd.svg" class="" alt=""></span> </p>
+        </div>
+      </div>
+      <div
+        class="w-full h-full max-w-[500px] xl:max-w-[750px] 2xl:max-w-[800px] absolute hidden lg:block right-0 top-0 ">
+        <img src="img/footer/imageFooter.png" class="object-cover w-full h-full object-left " alt="">
+      </div>
+      <div class="w-1/2 h-full hidden md:block lg:hidden  absolute right-0 bottom-0">
+        <img src="img/footer/imagenFooterTablet.png" class="object-cover w-full h-full object-left" alt="">
+      </div>
+
+      <div class="w-full h-[90vh]   md:hidden block  ">
+        <img src="img/footer/imageFooterMovil.png" class="object-cover w-full h-full " alt="">
+      </div>
+      <p
+        class="text-[14px] text-[#FFFAF3] w-full text-center  sm:text-start flex flex-col md:flex-row lg:hidden py-4 items-center justify-start lg:justify-center gap-1 px-[20px]">
+        Fundación
+        Ignacia ©2024 Todos
+        lo
+        derechos
+        reservados<span class="flex items-center gap-1 text-[10px]">MADE WITH
+          <img src="img/footer/heart.svg" alt=""> <img src="img/footer/nerd.svg" class="" alt=""></span> </p>
+
+    </div>
+  </footer>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
