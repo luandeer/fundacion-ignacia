@@ -569,3 +569,6 @@ function toggleSubmenu(event) {
   submenu.classList.toggle("hidden"); // Alternar clase para mostrar/ocultar el submenú
   iconRotate.classList.toggle("rotate-90"); // Alternar rotación del ícono
 }
+
+
+

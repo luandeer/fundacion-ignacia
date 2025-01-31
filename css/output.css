@@ -995,6 +995,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -1590,6 +1594,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-125{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -2090,6 +2100,11 @@ video {
 .\!px-\[16px\]{
   padding-left: 16px !important;
   padding-right: 16px !important;
+}
+
+.\!px-\[30px\]{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 .\!py-\[10px\]{
@@ -2642,6 +2657,10 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .duration-700{
@@ -3257,7 +3276,7 @@ video {
 .animated-button {
   position: relative;
   display: inline-block;
-  padding: 12px 24px;
+  padding: 16px 24px;
   border: none;
   font-size: 16px;
   background-color: #9b4121;
@@ -3292,6 +3311,71 @@ video {
 }
 
 .animated-button:hover span:last-child {
+  width: 100%;
+  height: 150px;
+  opacity: 1;
+}
+
+/* button line */
+
+.animated-button-outline {
+  position: relative;
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid #000;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #000;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button-outline span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c95e29;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button-outline span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button-outline:hover {
+  color: white;
+  /* Cambia el color del texto a blanco */
+  border: 1px solid #c95e29;
+}
+
+.animated-button-outline:active {
+  scale: 0.95;
+}
+
+.animated-button-outline:hover span:last-child {
+  width: 100%;
+  height: 150px;
+  opacity: 1;
+}
+
+/* Aplicando hover con group */
+
+.group:hover .animated-button-outline {
+  color: white;
+  /* Cambia el color del texto a blanco */
+  border: 1px solid #c95e29;
+}
+
+.group:hover .animated-button-outline span:last-child {
   width: 100%;
   height: 150px;
   opacity: 1;
@@ -3353,6 +3437,12 @@ video {
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.group:hover .group-hover\:scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:scale-125{
@@ -3457,8 +3547,8 @@ video {
     max-width: 496px;
   }
 
-  .md\:max-w-\[500px\]{
-    max-width: 500px;
+  .md\:max-w-\[550px\]{
+    max-width: 550px;
   }
 
   .md\:max-w-\[600px\]{

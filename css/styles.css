@@ -533,7 +533,7 @@
 .animated-button {
 	position: relative;
 	display: inline-block;
-	padding: 12px 24px;
+	padding: 16px 24px;
 	border: none;
 	font-size: 16px;
 	background-color: #9b4121;
@@ -568,6 +568,65 @@
 }
 
 .animated-button:hover span:last-child {
+	width: 100%;
+	height: 150px;
+	opacity: 1;
+}
+
+/* button line */
+.animated-button-outline {
+	position: relative;
+	display: inline-block;
+	padding: 6px 16px;
+	border: 1px solid #000;
+	font-size: 16px;
+	background-color: transparent;
+	border-radius: 100px;
+	color: #000;
+	box-shadow: 0 0 0 2px #ffffff20;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button-outline span:last-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	background-color: #c95e29;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button-outline span:first-child {
+	position: relative;
+	z-index: 1;
+}
+.animated-button-outline:hover {
+	color: white; /* Cambia el color del texto a blanco */
+	border: 1px solid #c95e29;
+}
+.animated-button-outline:active {
+	scale: 0.95;
+}
+
+.animated-button-outline:hover span:last-child {
+	width: 100%;
+	height: 150px;
+	opacity: 1;
+}
+
+/* Aplicando hover con group */
+.group:hover .animated-button-outline {
+	color: white; /* Cambia el color del texto a blanco */
+	border: 1px solid #c95e29;
+}
+
+.group:hover .animated-button-outline span:last-child {
 	width: 100%;
 	height: 150px;
 	opacity: 1;
