@@ -719,6 +719,10 @@ video {
   top: -3%;
 }
 
+.-top-\[4\%\]{
+  top: -4%;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -917,6 +921,11 @@ video {
 .my-\[50px\]{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.my-\[80px\]{
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .\!-mb-20{
@@ -1173,6 +1182,18 @@ video {
 
 .mt-\[94px\]{
   margin-top: 94px;
+}
+
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
+
+.mt-\[60px\]{
+  margin-top: 60px;
+}
+
+.mt-\[40px\]{
+  margin-top: 40px;
 }
 
 .\!block{
@@ -1574,8 +1595,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-y-\[80\%\]{
-  --tw-translate-y: -80%;
+.-translate-y-\[100\%\]{
+  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1584,8 +1605,18 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-10{
+  --tw-translate-x: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-full{
   --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-5{
+  --tw-translate-y: 1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2333,6 +2364,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[20px\]{
+  padding-top: 20px;
+}
+
 .pt-\[30px\]{
   padding-top: 30px;
 }
@@ -2343,6 +2378,10 @@ video {
 
 .pt-\[80px\]{
   padding-top: 80px;
+}
+
+.pb-\[100px\]{
+  padding-bottom: 100px;
 }
 
 .text-left{
@@ -2590,6 +2629,10 @@ video {
   text-decoration-line: underline;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .opacity-20{
   opacity: 0.2;
 }
@@ -2649,6 +2692,18 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
+}
+
+.delay-200{
+  transition-delay: 200ms;
+}
+
+.delay-300{
+  transition-delay: 300ms;
 }
 
 .duration-1000{
@@ -3379,6 +3434,204 @@ video {
   width: 100%;
   height: 150px;
   opacity: 1;
+}
+
+/* transiciones */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.8s ease-out;
+}
+
+/*como lo apoyamos*/
+
+/* Animación "softPopIn" con transformaciones sutiles */
+
+@keyframes softPopIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+
+  70% {
+    opacity: 0.8;
+    transform: translateY(-3px) scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Estado inicial de los elementos */
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+/* Cuando se añade la clase "visible", se dispara la animación suave */
+
+.animate-section.visible {
+  animation: softPopIn 1.5s ease-out forwards;
+}
+
+/* Clases de retraso para escalonar la animación */
+
+.delay-1.visible {
+  animation-delay: 0.2s;
+}
+
+.delay-2.visible {
+  animation-delay: 0.4s;
+}
+
+.delay-3.visible {
+  animation-delay: 0.6s;
+}
+
+.delay-4.visible {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Estado inicial de cada card: oculta, desplazada y un poco pequeña */
+
+.card-animate {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+/* Al estar en vista, se dispara la animación */
+
+.card-animate.in-view {
+  animation: fadeInScaleUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Si deseas escalonar un poco el inicio de las animaciones según el orden */
+
+.card-animate.in-view:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card-animate.in-view:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.card-animate.in-view:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.card-animate.in-view:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Animación de entrada desde abajo hacia arriba */
+
+/* Animación de entrada desde arriba hacia abajo */
+
+@keyframes slideDownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Deslizar desde arriba */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar la animación */
+
+.animate-slideDown {
+  animation: slideDownIn 0.8s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar la animación */
+
+.animate-banner {
+  animation: slideFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes dibujar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animación para el SVG móvil */
+
+.dibujar-mobile {
+  stroke-dasharray: 1000;
+  /* Longitud del trazo */
+  stroke-dashoffset: 1000;
+  /* Igual que stroke-dasharray */
+  animation: dibujar 3s ease-out forwards;
+  /* Duración y tipo de animación */
+}
+
+/* Animación para el SVG desktop */
+
+.dibujar-desktop {
+  stroke-dasharray: 3000;
+  /* Longitud del trazo */
+  stroke-dashoffset: 3000;
+  /* Igual que stroke-dasharray */
+  animation: dibujar 4s ease-out forwards;
+  /* Duración y tipo de animación */
 }
 
 /*este es móvil*/

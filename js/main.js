@@ -1,9 +1,43 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof AOS !== "undefined") {
+    AOS.init();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.card-animate');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // Deja de observar una vez animada
+      }
+    });
+  }, { threshold: 0.5 }); // Ajusta el threshold según lo que necesites
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+});
 
 
 
-//accordion responsive
 
+document.addEventListener('DOMContentLoaded', function () {
+  const animatedElements = document.querySelectorAll('.animate-section');
 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  animatedElements.forEach(el => observer.observe(el));
+});
 
 //menu responsive
 // Función para inicializar el menú

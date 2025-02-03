@@ -6,134 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/output.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <title>Document</title>
 </head>
 
-<body>
+<body class="bg-[#FFFDF4] ">
   <header class="fondoHeader sticky top-0 z-[20] ">
-    <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
-      <a href="/">
-        <div class="max-w-[151px] min-w-[151px]">
-          <img src="img/logo.svg" class="w-full object-cover" alt="">
-        </div>
-      </a>
-      <nav class="w-full hidden lg:block h-full">
-        <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
-          <li class="menu-item h-full flex items-center">
-            <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
-              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
-            <div class="submenu-list">
-              <ul class="max-w-[1440px] mx-auto">
-                <li class="submenu-item ">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/fundadora.html" class="submenu-link">Nuestra historia</a>
-                </li>
-                <li class="submenu-item">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/programasocial.html" class="submenu-link">Programa social</a>
-                </li>
-                <li class="submenu-item">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/nuestroImpacto.html" class="submenu-link"> Nuestro impacto</a>
-                </li>
-              </ul>
-            </div>
-          </li>
+    <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+      <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
+        <a href="/">
+          <div class="max-w-[151px] min-w-[151px]">
+            <img src="img/logo.svg" class="w-full object-cover" alt="">
+          </div>
+        </a>
+        <nav class="w-full hidden lg:block h-full">
+          <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
+            <li class="menu-item h-full flex items-center">
+              <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
+                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+              <div class="submenu-list">
+                <ul class="max-w-[1440px] mx-auto">
+                  <li class="submenu-item ">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/fundadora.html" class="submenu-link">Nuestra historia</a>
+                  </li>
+                  <li class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/programasocial.html" class="submenu-link">Programa social</a>
+                  </li>
+                  <li class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/nuestroImpacto.html" class="submenu-link"> Nuestro impacto</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="menu-item h-full flex items-center">
-            <span href="#"
-              class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
-              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
-            <div class="submenu-list">
-              <div class="max-w-[1440px] mx-auto flex items-start">
-                <div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">
-                      Puericultorio Pérez Araníbar</a>
+            <li class="menu-item h-full flex items-center">
+              <span href="#"
+                class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
+                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+              <div class="submenu-list">
+                <div class="max-w-[1440px] mx-auto flex items-start">
+                  <div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">
+                        Puericultorio Pérez Araníbar</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link"> Hogar
+                        Ignacia Rodulfo Vda de Canevaro</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="/asiloLima.html" class="submenu-link"> Asilo de
+                        las Hermanitas de los Ancianos Desamparados (Lima)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Asilo de
+                        las
+                        Hermanitas de los Ancianos Desamparados (Callao)</a>
+                    </div>
                   </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link"> Hogar
-                      Ignacia Rodulfo Vda de Canevaro</a>
+                  <div>
+                    <div class="submenu-item ">
+                      <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                      <a href="#" class="submenu-link">
+                        Hogar de la Paz - Misioneras de la Caridad (Lima)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Hogar de
+                        las Misioneras de la Caridad (Cusco)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link"> CEBE 07
+                        La Inmaculada</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">CEBE 09
+                        San Francisco de Asís</a>
+                    </div>
                   </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="/asiloLima.html" class="submenu-link"> Asilo de
-                      las Hermanitas de los Ancianos Desamparados (Lima)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Asilo de
-                      las
-                      Hermanitas de los Ancianos Desamparados (Callao)</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="submenu-item ">
-                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
-                    <a href="#" class="submenu-link">
-                      Hogar de la Paz - Misioneras de la Caridad (Lima)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Hogar de
-                      las Misioneras de la Caridad (Cusco)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link"> CEBE 07
-                      La Inmaculada</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">CEBE 09
-                      San Francisco de Asís</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="submenu-item ">
-                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
-                    <a href="#" class="submenu-link">
-                      Instituto Nacional de Ciencias Neurológicas</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Iglesia de San Pedro</a>
-                  </div>
+                  <div>
+                    <div class="submenu-item ">
+                      <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                      <a href="#" class="submenu-link">
+                        Instituto Nacional de Ciencias Neurológicas</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Iglesia de San Pedro</a>
+                    </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
-          <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
-          <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="hidden lg:flex items-center">
-        <a href="/inmueblesAlquiler.html"
-          class="animated-button !w-min whitespace-nowrap !text-[15px] xl:!text-[16px] max-xl:!px-[14px] !font-medium  mx-auto">
-          <span>Inmuebles
-            en
-            alquiler</span>
-          <span></span>
-        </a>
+            <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
+            <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
+            <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="hidden lg:flex items-center">
+          <a href="/inmueblesAlquiler.html"
+            class="animated-button !w-min whitespace-nowrap !text-[15px] xl:!text-[16px] max-xl:!px-[14px] !font-medium  mx-auto">
+            <span>Inmuebles
+              en
+              alquiler</span>
+            <span></span>
+          </a>
+        </div>
+
+
+        <div class="block lg:hidden">
+
+          <label class="burger" for="btn_menu">
+            <input type="checkbox" id="btn_menu">
+            <span class="burger-bar bg-black"></span>
+            <span class="burger-bar bg-black"></span>
+            <span class="burger-bar bg-black"></span>
+          </label>
+
+        </div>
+
       </div>
-
-
-      <div class="block lg:hidden">
-
-        <label class="burger" for="btn_menu">
-          <input type="checkbox" id="btn_menu">
-          <span class="burger-bar bg-black"></span>
-          <span class="burger-bar bg-black"></span>
-          <span class="burger-bar bg-black"></span>
-        </label>
-
-      </div>
-
     </div>
     <!-- Menú de móvil -->
 
@@ -218,23 +222,25 @@
         <video autoplay muted loop id="myVideo" class="min-w-full min-h-full h-full object-cover absolute inset-0">
           <source src="img/videoEjemplo.mp4" type="video/mp4" />
         </video>
-        <div class="bg-black/60 absolute inset-0"></div>
+        <div class="bg-black/60 absolute inset-0">
+        </div>
         <div
-          class="absolute top-1/2 left-1/2 -translate-x-[50%] transform -translate-y-[80%] flex flex-col justify-center items-center text-white z-10 w-full">
-          <div class="relative w-full lg:max-w-[300px]">
+          class="absolute top-1/2 left-1/2 -translate-x-[50%] transform -translate-y-[100%] flex flex-col justify-center items-center text-white z-10 w-full ">
+          <div class="relative w-full lg:max-w-[300px] animate-banner">
             <img src="img/inicio/bg-title.svg" class="w-full h-full object-contain absolute inset-0" alt="" />
             <h1 class="text-[#9B4121] text-[26px] md:text-[50px] text-center relative z-20 font-semibold">
               100 años
             </h1>
           </div>
-          <p class="text-[26px] md:text-[50px] font-semibold text-center leading-tight">
+          <p class="text-[26px] md:text-[50px] font-semibold text-center leading-tight animate-banner">
             Cuidando de...
           </p>
         </div>
         <img src="img/inicio/bg-separator.svg" class="w-full object-cover absolute bottom-0 z-10" alt="" />
       </section>
       <section class="pt-[30px] px-[20px]">
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-[60px] md:gap-[100px] px-[20px] mb-16">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-[60px] md:gap-[100px] px-[20px] mb-16"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="flex flex-col items-center justify-center gap-[12px]">
             <img src="img/inicio/heart.svg" class="object-cover" alt="" />
             <h3 class="text-center subtitulo-2">Fundación Ignacia</h3>
@@ -253,7 +259,8 @@
             <img src="img/inicio/imagen1Home.png" class="object-cover w-full h-full" alt="" />
           </div>
         </div>
-        <div class="py-[80px] lg:pb-[100px] flex flex-col">
+        <div class="py-[80px] lg:pb-[100px] flex flex-col" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-once="true">
           <div class="flex flex-col items-center justify-center gap-[12px] mb-[60px] px-[11px]">
             <h1 class="text-center subtitulo-1 max-w-[653px] mx-auto !leading-tight w-full">
               Transformando vidas de niños y ancianos vulnerables
@@ -295,10 +302,12 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                  <a href="/fundadora.html"
+                    class="group grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
                     <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
-                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                      <img src="img/inicio/imagen2.png"
+                        class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                        alt="" />
                     </div>
                     <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
                       <div class="flex flex-col gap-2">
@@ -311,17 +320,23 @@
                           Lorem ipsum dolor sit amet cons...
                         </p>
                       </div>
-                      <a href=""
-                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
-                        más</a>
+
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                  <a href="/fundadora.html"
+                    class="group grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
                     <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
-                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                      <img src="img/inicio/imagen2.png"
+                        class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                        alt="" />
                     </div>
                     <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
                       <div class="flex flex-col gap-2">
@@ -334,17 +349,23 @@
                           Lorem ipsum dolor sit amet cons...
                         </p>
                       </div>
-                      <a href=""
-                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
-                        más</a>
+
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
+                  <a href="/fundadora.html"
+                    class="group grid grid-cols-1 md:grid-cols-2 gap-[16px] md:gap-[20px] max-w-[600px] mx-auto w-full h-full">
                     <div class="max-w-[245px] md:max-w-[350px] w-full h-full mx-auto rounded-[20px] overflow-hidden">
-                      <img src="img/inicio/imagen2.png" class="object-cover w-full h-full" alt="" />
+                      <img src="img/inicio/imagen2.png"
+                        class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                        alt="" />
                     </div>
                     <div class="w-full max-w-[350px] mx-auto flex flex-col justify-between h-full">
                       <div class="flex flex-col gap-2">
@@ -357,11 +378,15 @@
                           Lorem ipsum dolor sit amet cons...
                         </p>
                       </div>
-                      <a href=""
-                        class="border border-black rounded-full py-[6px] px-[16px] hidden md:block w-min max-md:mx-auto whitespace-nowrap">Leer
-                        más</a>
+
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -378,12 +403,14 @@
       </section>
       <section class="py-[80px] bg-[#C95E29]">
         <div class="px-[20px]">
-          <h2 class="text-center subtitulo-1 !text-white mb-[50px] lg:mb-[80px]">
+          <h2 class="text-center subtitulo-1 !text-white mb-[50px] lg:mb-[80px]" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-once="true">
             Beneficiarios de la Fundación
           </h2>
 
           <div
-            class="max-w-[1200px] overflow-hidden hidden lg:flex items-center lg:gap-16 xl:gap-20 mx-auto w-full lg:h-[700px] xl:h-[600px] relative">
+            class="max-w-[1200px] overflow-hidden hidden lg:flex items-center lg:gap-16 xl:gap-20 mx-auto w-full lg:h-[700px] xl:h-[600px] relative"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div class="ContentHomeBeneficios flex-1 !h-full">
               <img src="img/inicio/adorno.svg" class="object-cover absolute top-[10%] left-0" alt="" />
               <div class="swiper-wrapper">
@@ -564,8 +591,10 @@
       </section>
       <section class="py-[80px]">
         <div class="px-[20px] flex flex-col">
-          <h2 class="text-center subtitulo-1 mb-[54px]">Actividades</h2>
-          <div class="flex flex-col justify-center items-center lg:flex-row gap-[50px] mb-20">
+          <h2 class="text-center subtitulo-1 mb-[54px]" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-once="true">Actividades</h2>
+          <div class="flex flex-col justify-center items-center lg:flex-row gap-[50px] mb-20" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-once="true">
             <div class="flex flex-col items-start justify-start max-w-[370px]">
               <div class="max-w-[352px] w-full mb-[20px]">
                 <img src="img/inicio/imagen4.png" class="object-cover w-full h-full" alt="" />
@@ -633,7 +662,8 @@
       </section>
     </div>
   </main>
-  <footer class="bg-[#C95E29] w-full relative h-full lg:h-[659px] flex items-center pt-40 lg:pt-28">
+  <footer class="bg-[#C95E29] w-full relative h-full lg:h-[659px] flex items-center pt-40 lg:pt-28" data-aos="fade-up"
+    data-aos-duration="1000" data-aos-once="true">
     <div class="max-w-[200px] absolute top-[50px] left-[50%] z-10 transform -translate-x-[50%] w-full mx-auto">
       <img src="img/logoWhite.svg" class="w-full object-cover " alt="">
     </div>
@@ -708,7 +738,9 @@
 
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

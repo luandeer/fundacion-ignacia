@@ -6,135 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/output.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <title>asilo</title>
 </head>
 
 <body>
   <header class="fondoHeader sticky top-0 z-[20] ">
-    <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
-      <a href="/">
-        <div class="max-w-[151px] min-w-[151px]">
-          <img src="img/logo.svg" class="w-full object-cover" alt="">
-        </div>
-      </a>
-      <nav class="w-full hidden lg:block h-full">
-        <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
-          <li class="menu-item h-full flex items-center">
-            <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
-              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
-            <div class="submenu-list">
-              <ul class="max-w-[1440px] mx-auto">
-                <li class="submenu-item ">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/fundadora.html" class="submenu-link">Nuestra historia</a>
-                </li>
-                <li class="submenu-item">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/programasocial.html" class="submenu-link">Programa social</a>
-                </li>
-                <li class="submenu-item">
-                  <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                  <a href="/nuestroImpacto.html" class="submenu-link"> Nuestro impacto</a>
-                </li>
-              </ul>
-            </div>
-          </li>
+    <div class="animate-slideDown">
+      <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
+        <a href="/">
+          <div class="max-w-[151px] min-w-[151px]">
+            <img src="img/logo.svg" class="w-full object-cover" alt="">
+          </div>
+        </a>
+        <nav class="w-full hidden lg:block h-full">
+          <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
+            <li class="menu-item h-full flex items-center">
+              <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
+                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+              <div class="submenu-list">
+                <ul class="max-w-[1440px] mx-auto">
+                  <li class="submenu-item ">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/fundadora.html" class="submenu-link">Nuestra historia</a>
+                  </li>
+                  <li class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/programasocial.html" class="submenu-link">Programa social</a>
+                  </li>
+                  <li class="submenu-item">
+                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                    <a href="/nuestroImpacto.html" class="submenu-link"> Nuestro impacto</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="menu-item h-full flex items-center">
-            <span href="#"
-              class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
-              <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
-            <div class="submenu-list">
-              <div class="max-w-[1440px] mx-auto flex items-start">
-                <div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">
-                      Puericultorio Pérez Araníbar</a>
+            <li class="menu-item h-full flex items-center">
+              <span href="#"
+                class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
+                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+              <div class="submenu-list">
+                <div class="max-w-[1440px] mx-auto flex items-start">
+                  <div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">
+                        Puericultorio Pérez Araníbar</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link"> Hogar
+                        Ignacia Rodulfo Vda de Canevaro</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="/asiloLima.html" class="submenu-link"> Asilo de
+                        las Hermanitas de los Ancianos Desamparados (Lima)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Asilo de
+                        las
+                        Hermanitas de los Ancianos Desamparados (Callao)</a>
+                    </div>
                   </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link"> Hogar
-                      Ignacia Rodulfo Vda de Canevaro</a>
+                  <div>
+                    <div class="submenu-item ">
+                      <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                      <a href="#" class="submenu-link">
+                        Hogar de la Paz - Misioneras de la Caridad (Lima)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Hogar de
+                        las Misioneras de la Caridad (Cusco)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link"> CEBE 07
+                        La Inmaculada</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">CEBE 09
+                        San Francisco de Asís</a>
+                    </div>
                   </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="/asiloLima.html" class="submenu-link"> Asilo de
-                      las Hermanitas de los Ancianos Desamparados (Lima)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Asilo de
-                      las
-                      Hermanitas de los Ancianos Desamparados (Callao)</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="submenu-item ">
-                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
-                    <a href="#" class="submenu-link">
-                      Hogar de la Paz - Misioneras de la Caridad (Lima)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Hogar de
-                      las Misioneras de la Caridad (Cusco)</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link"> CEBE 07
-                      La Inmaculada</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">CEBE 09
-                      San Francisco de Asís</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="submenu-item ">
-                    <img src="img/arrowLeft.svg" class="object-cover " alt="">
-                    <a href="#" class="submenu-link">
-                      Instituto Nacional de Ciencias Neurológicas</a>
-                  </div>
-                  <div class="submenu-item">
-                    <img src="img/arrowLeft.svg" class="object-cover" alt="">
-                    <a href="#" class="submenu-link">Iglesia de San Pedro</a>
-                  </div>
+                  <div>
+                    <div class="submenu-item ">
+                      <img src="img/arrowLeft.svg" class="object-cover " alt="">
+                      <a href="#" class="submenu-link">
+                        Instituto Nacional de Ciencias Neurológicas</a>
+                    </div>
+                    <div class="submenu-item">
+                      <img src="img/arrowLeft.svg" class="object-cover" alt="">
+                      <a href="#" class="submenu-link">Iglesia de San Pedro</a>
+                    </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
-          <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
-          <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="hidden lg:flex items-center">
-        <a href="/inmueblesAlquiler.html"
-          class="animated-button !w-min whitespace-nowrap !text-[15px] xl:!text-[16px] max-xl:!px-[14px] !font-medium  mx-auto">
-          <span>Inmuebles
-            en
-            alquiler</span>
-          <span></span>
-        </a>
+            <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
+            <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
+            <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="hidden lg:flex items-center">
+          <a href="/inmueblesAlquiler.html"
+            class="animated-button !w-min whitespace-nowrap !text-[15px] xl:!text-[16px] max-xl:!px-[14px] !font-medium  mx-auto">
+            <span>Inmuebles
+              en
+              alquiler</span>
+            <span></span>
+          </a>
+        </div>
+
+
+        <div class="block lg:hidden">
+
+          <label class="burger" for="btn_menu">
+            <input type="checkbox" id="btn_menu">
+            <span class="burger-bar bg-black"></span>
+            <span class="burger-bar bg-black"></span>
+            <span class="burger-bar bg-black"></span>
+          </label>
+
+        </div>
+
       </div>
-
-
-      <div class="block lg:hidden">
-
-        <label class="burger" for="btn_menu">
-          <input type="checkbox" id="btn_menu">
-          <span class="burger-bar bg-black"></span>
-          <span class="burger-bar bg-black"></span>
-          <span class="burger-bar bg-black"></span>
-        </label>
-
-      </div>
-
     </div>
     <!-- Menú de móvil -->
 
@@ -216,20 +219,24 @@
         </div>
       </div>
 
-      <section class="py-[80px] relative mb-10">
+      <section class="pt-[80px] relative mb-[100px]">
 
         <div class=" max-w-[1440px] mx-auto">
           <div class="max-w-[828px] mx-auto px-[20px]">
-            <h1 class="text-center  subtitulo-1 !leading-tight mb-[30px]">Actividades</h1>
-            <p class=" descripcion !leading-relaxed  mb-[30px] text-center">Lorem ipsum dolor sit amet consectetur.
+            <h1 class="text-center  subtitulo-1 !leading-tight mb-[30px]" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-once="true">Actividades</h1>
+            <p class=" descripcion !leading-relaxed  mb-[30px] text-center" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-once="true">Lorem ipsum dolor sit amet consectetur.
               Sagittis quis dictumst turpis nibh ultricies iaculis dolor mauri
             </p>
 
           </div>
 
           <div class="block md:flex items-center justify-between  mb-[34px] md:mb-[30px] px-[20px]">
-            <h2 class="font-semibold text-center text-[24px] md:text-[30px]">Actividades destacadas </h2>
-            <div class="hidden md:flex items-center gap-6 justify-center">
+            <h2 class="font-semibold text-center text-[24px] md:text-[30px]" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-once="true">Actividades destacadas </h2>
+            <div class="hidden md:flex items-center gap-6 justify-center" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-once="true">
               <div class="custom-prev-historia-destacados-impacto !block">
                 <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="black" />
@@ -248,7 +255,8 @@
             </div>
 
           </div>
-          <div class="w-full px-[20px] paginacionDestacadoImpacto relative">
+          <div class="w-full px-[20px] paginacionDestacadoImpacto relative" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-once="true">
             <div class="carouselDestacadosImpacto !w-full overflow-hidden">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -365,7 +373,8 @@
       </section>
 
       <section class="pb-20">
-        <div class="max-w-[1440px] mx-auto flex flex-col px-[20px] mb-10">
+        <div class="max-w-[1440px] mx-auto flex flex-col px-[20px] mb-10" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-once="true">
           <h2 class="font-semibold text-start text-[24px] md:text-[30px] mb-[52px]">Últimas novedades</h2>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] lg:gap-[30px] xl:gap-[71px] mb-[50px]">
@@ -563,6 +572,8 @@
 
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
