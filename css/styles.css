@@ -746,7 +746,7 @@
 @keyframes slideDownIn {
 	from {
 		opacity: 0;
-		transform: translateY(-20px); /* Deslizar desde arriba */
+		transform: translateY(-100px); /* Deslizar desde arriba */
 	}
 	to {
 		opacity: 1;
