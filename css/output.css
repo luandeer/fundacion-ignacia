@@ -823,6 +823,10 @@ video {
   top: 8%;
 }
 
+.\!z-0{
+  z-index: 0 !important;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1244,6 +1248,10 @@ video {
   height: min-content !important;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .h-4{
   height: 1rem;
 }
@@ -1607,6 +1615,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-90{
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1626,6 +1639,14 @@ video {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\!cursor-default{
+  cursor: default !important;
+}
+
+.cursor-default{
+  cursor: default;
 }
 
 .cursor-pointer{
@@ -1980,6 +2001,11 @@ video {
 .bg-\[\#DF7540\]{
   --tw-bg-opacity: 1;
   background-color: rgb(223 117 64 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F5F2E3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 242 227 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#FAECDA\]{
@@ -2598,6 +2624,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1));
@@ -2671,6 +2702,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2691,6 +2728,10 @@ video {
 
 .duration-1000{
   transition-duration: 1000ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-300{
@@ -2715,6 +2756,165 @@ video {
 
 * {
   font-family: 'Poppins', sans-serif;
+}
+
+.custom-button {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.custom-button:focus,
+.custom-button:hover {
+  color: #9b4121;
+}
+
+.custom-button:focus:after,
+.custom-button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.custom-button:after {
+  content: '';
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #9b4121;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* Estilos para el estado activo: se aplican los mismos efectos que hover */
+
+.custom-button.active,
+.custom-button.active:focus,
+.custom-button.active:hover {
+  color: #9b4121;
+}
+
+.custom-button.active:after,
+.custom-button.active:focus:after,
+.custom-button.active:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+/* Oculta los submenús inicialmente */
+
+.submenu-list {
+  opacity: 0;
+  /* Inicialmente oculto */
+  visibility: hidden;
+  /* Ocultar visualmente */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  /* Suavidad */
+}
+
+.menu-item:hover > .submenu-list {
+  opacity: 1;
+  /* Hacer visible */
+  visibility: visible;
+  /* Mostrar el contenido */
+}
+
+/* Submenús */
+
+.submenu-list {
+  background: #fffdf4;
+  border-radius: 0px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 101%;
+  left: 0%;
+  width: 100%;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  max-width: 269px;
+  padding: 10px 0px 10px 40px;
+}
+
+.submenu-link {
+  color: #000;
+  font-size: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: color 0.3s ease;
+  /* Suavidad */
+}
+
+.submenu-link:hover {
+  color: #9b4121;
+}
+
+.menu-item:hover > .menu-link {
+  color: #9b4121;
+}
+
+.menu-item:hover > .menu-link svg {
+  transform: rotate(180deg);
+}
+
+.menu-item:hover > .menu-link svg path {
+  fill: #9b4121;
+}
+
+/* Mantiene el estado hover de .custom-button cuando el submenu esté abierto */
+
+.menu-item:hover .custom-button {
+  color: #9b4121;
+}
+
+.menu-item:hover .custom-button:after {
+  width: 100%;
+  left: 0%;
+}
+
+.custom-button-1 {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.custom-button-1:focus,
+.custom-button-1:hover {
+  color: #fffaf3;
+}
+
+.custom-button-1:focus:after,
+.custom-button-1:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.custom-button-1:after {
+  content: '';
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fffaf3;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 .fondoHeader {
@@ -3118,6 +3318,63 @@ video {
   color: #000000;
 }
 
+/*Textarea*/
+
+.input-wrapper-1 {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.input-wrapper-1 textarea {
+  width: 100%;
+  border: none;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  outline: none;
+  padding: 20px 8px 4px 10px;
+  /* Agrega padding suficiente en la parte superior */
+  font-size: 16px;
+  font-style: normal;
+  line-height: 2;
+  /* Asegúrate de que haya suficiente espacio para el texto */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-wrapper-1 textarea:focus {
+  border: 1px solid #000000;
+}
+
+.input-wrapper-1 label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  color: #000000;
+  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+  will-change: transform, color;
+  backface-visibility: hidden;
+  transform: translateY(-4px);
+}
+
+.input-wrapper-1 textarea:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-16px) scale(0.85);
+  /* Asegúrate de que el label no se sobreponga */
+  color: #000000;
+}
+
+.input-wrapper-1 textarea:focus + label,
+.input-wrapper-1 textarea:not(:placeholder-shown) + label {
+  transform: translateY(-16px) scale(0.85);
+  /* Asegúrate de que el label no se sobreponga */
+  color: #000000;
+}
+
 /*checkbox*/
 
 .checkbox-wrapper-65 .cbx {
@@ -3258,57 +3515,6 @@ video {
   /* Mostrar el menú cuando está abierto */
 }
 
-/* Oculta los submenús inicialmente */
-
-.submenu-list {
-  opacity: 0;
-  /* Inicialmente oculto */
-  visibility: hidden;
-  /* Ocultar visualmente */
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  /* Suavidad */
-}
-
-.menu-item:hover > .submenu-list {
-  opacity: 1;
-  /* Hacer visible */
-  visibility: visible;
-  /* Mostrar el contenido */
-}
-
-/* Submenús */
-
-.submenu-list {
-  background: #fffdf4;
-  border-radius: 0px;
-  padding: 10px 0px;
-  position: absolute;
-  top: 101%;
-  left: 0%;
-  width: 100%;
-}
-
-.submenu-item {
-  display: flex;
-  align-items: start;
-  gap: 10px;
-  max-width: 269px;
-  padding: 10px 0px 10px 40px;
-}
-
-.submenu-link {
-  color: #000;
-  font-size: 12px;
-  width: -moz-fit-content;
-  width: fit-content;
-  transition: color 0.3s ease;
-  /* Suavidad */
-}
-
-.submenu-link:hover {
-  color: #9b4121;
-}
-
 /*boton con hover header*/
 
 .animated-button {
@@ -3368,7 +3574,7 @@ video {
   box-shadow: 0 0 0 2px #ffffff20;
   cursor: pointer;
   overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-button-outline span:last-child {
@@ -3381,7 +3587,7 @@ video {
   background-color: #c95e29;
   border-radius: 50%;
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-button-outline span:first-child {
@@ -3665,9 +3871,14 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-\[\#EEEEEE\]:hover{
+.hover\:bg-\[\#F5F2E3\]:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity, 1));
+  background-color: rgb(245 242 227 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-\[\#9B4121\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(155 65 33 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus{
@@ -3685,6 +3896,10 @@ video {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:fill-\[\#9B4121\]{
+  fill: #9B4121;
 }
 
 @media not all and (min-width: 1280px){

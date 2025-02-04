@@ -13,7 +13,7 @@
 
 <body>
   <header class="fondoHeader sticky top-0 z-[20] ">
-    <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
       <div class="flex items-center justify-between max-w-[1440px] mx-auto w-full h-[80px] lg:h-[100px] px-[20px]">
         <a href="/">
           <div class="max-w-[151px] min-w-[151px]">
@@ -22,9 +22,26 @@
         </a>
         <nav class="w-full hidden lg:block h-full">
           <ul class="flex items-center justify-center gap-[18px]  xl:gap-[43px] menu-list h-full ">
-            <li class="menu-item h-full flex items-center">
-              <span href="#" class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Nosotros
-                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+            <li class="menu-item h-full flex items-center open">
+              <span
+                class="menu-link link-nav-style  flex items-center !cursor-default gap-0.5 hover:text-[#9B4121] group custom-button">
+                Nosotros
+                <svg xmlns="http://www.w3.org/2000/svg" class="-mb-1 " width="24" height="12" viewBox="0 0 24 12"
+                  fill="none">
+                  <g clip-path="url(#clip0_880_166)">
+                    <path
+                      d="M17.42 2.45199L18.48 3.51299L12.703 9.29199C12.6104 9.38514 12.5004 9.45907 12.3791 9.50952C12.2579 9.55997 12.1278 9.58594 11.9965 9.58594C11.8652 9.58594 11.7352 9.55997 11.6139 9.50952C11.4927 9.45907 11.3826 9.38514 11.29 9.29199L5.51001 3.51299L6.57001 2.45299L11.995 7.87699L17.42 2.45199Z"
+                      fill="black" class="group-hover:fill-[#9B4121] transition-colors duration-300" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_880_166">
+                      <rect width="12" height="24" fill="white" transform="translate(24) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+
+
               <div class="submenu-list">
                 <ul class="max-w-[1440px] mx-auto">
                   <li class="submenu-item ">
@@ -44,9 +61,23 @@
             </li>
 
             <li class="menu-item h-full flex items-center">
-              <span href="#"
-                class="menu-link link-nav-style h-full flex items-center cursor-pointer gap-0.5">Beneficiarios
-                <img src="img/arrowBottom.svg" class="object-cover -mb-1" alt=""></span>
+              <span
+                class="menu-link link-nav-style  flex items-center !cursor-default gap-0.5 hover:text-[#9B4121] group custom-button">
+                Beneficiarios
+                <svg xmlns="http://www.w3.org/2000/svg" class="-mb-1 " width="24" height="12" viewBox="0 0 24 12"
+                  fill="none">
+                  <g clip-path="url(#clip0_880_166)">
+                    <path
+                      d="M17.42 2.45199L18.48 3.51299L12.703 9.29199C12.6104 9.38514 12.5004 9.45907 12.3791 9.50952C12.2579 9.55997 12.1278 9.58594 11.9965 9.58594C11.8652 9.58594 11.7352 9.55997 11.6139 9.50952C11.4927 9.45907 11.3826 9.38514 11.29 9.29199L5.51001 3.51299L6.57001 2.45299L11.995 7.87699L17.42 2.45199Z"
+                      fill="black" class="group-hover:fill-[#9B4121] transition-colors duration-300" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_880_166">
+                      <rect width="12" height="24" fill="white" transform="translate(24) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
               <div class="submenu-list">
                 <div class="max-w-[1440px] mx-auto flex items-start">
                   <div>
@@ -110,9 +141,9 @@
               </div>
             </li>
 
-            <li><a href="/transformnarVidas.html" class="link-nav-style">Cómo ayudar</a></li>
-            <li><a href="/actividades.html" class="link-nav-style">Actividades</a></li>
-            <li><a href="/contacto.html" class="link-nav-style">Contacto</a></li>
+            <li><a href="/transformnarVidas.html" class="link-nav-style custom-button">Cómo ayudar</a></li>
+            <li><a href="/actividades.html" class="link-nav-style custom-button">Actividades</a></li>
+            <li><a href="/contacto.html" class="link-nav-style custom-button">Contacto</a></li>
           </ul>
         </nav>
         <div class="hidden lg:flex items-center">
@@ -328,8 +359,12 @@
 
           <!-- Botón final (opcionalmente animado) -->
           <div class="flex justify-center">
-            <a href="/" class="animate-section delay-1 boton-fundacion w-min mx-auto whitespace-nowrap">
-              Más información
+
+            <a href="#"
+              class="animated-button !w-min whitespace-nowrap  !text-[15px] xl:!text-[16px] !px-[30px] font-semibold mx-auto"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+              <span>Más información</span>
+              <span></span>
             </a>
           </div>
         </div>
@@ -406,52 +441,99 @@
             <div class="carouselAsiloBeneficiarios !w-full overflow-hidden">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="flex flex-col gap-2">
-                    <img src="img/inicio/imagen2.png" alt="">
-                    <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
-                    <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
-                      de Lima...</p>
-                    <a href=""
-                      class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                      Leer más</a>
 
-                  </div>
+                  <a href="/fundadora.html">
+                    <div class="group flex flex-col gap-2">
+                      <div class="w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                        <img src="img/inicio/imagen2.png"
+                          class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                          alt="" />
+
+
+                      </div>
+                      <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
+                      <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
+                        de Lima...</p>
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
+
+                    </div>
+                  </a>
+
+
                 </div>
                 <div class="swiper-slide">
-                  <div class="flex flex-col gap-2">
-                    <img src="img/inicio/imagen2.png" alt="">
-                    <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
-                    <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
-                      de Lima...</p>
-                    <a href=""
-                      class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                      Leer más</a>
+                  <a href="/fundadora.html">
+                    <div class="group flex flex-col gap-2">
+                      <div class="w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                        <img src="img/inicio/imagen2.png"
+                          class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                          alt="" />
 
-                  </div>
+
+                      </div>
+                      <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
+                      <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
+                        de Lima...</p>
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
+
+                    </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="flex flex-col gap-2">
-                    <img src="img/inicio/imagen2.png" alt="">
-                    <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
-                    <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
-                      de Lima...</p>
-                    <a href=""
-                      class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                      Leer más</a>
+                  <a href="/fundadora.html">
+                    <div class="group flex flex-col gap-2">
+                      <div class="w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                        <img src="img/inicio/imagen2.png"
+                          class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                          alt="" />
 
-                  </div>
+
+                      </div>
+                      <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
+                      <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
+                        de Lima...</p>
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
+
+                    </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="flex flex-col gap-2">
-                    <img src="img/inicio/imagen2.png" alt="">
-                    <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
-                    <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
-                      de Lima...</p>
-                    <a href=""
-                      class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                      Leer más</a>
+                  <a href="/fundadora.html">
+                    <div class="group flex flex-col gap-2">
+                      <div class="w-full h-full mx-auto rounded-[20px] overflow-hidden">
+                        <img src="img/inicio/imagen2.png"
+                          class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                          alt="" />
 
-                  </div>
+
+                      </div>
+                      <h3 class="title-card">Puericultorio Pérez Araníbar</h3>
+                      <p class="descripcion text-[#414141] mb-2">Es un Centro de Atención a cargo de la Beneficencia
+                        de Lima...</p>
+                      <div
+                        class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !text-[15px] xl:!text-[16px]   ">
+                        <span>Leer
+                          más</span>
+                        <span></span>
+                      </div>
+
+                    </div>
+                  </a>
                 </div>
 
               </div>

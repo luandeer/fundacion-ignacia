@@ -5,6 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  const currentPath = window.location.pathname;
+  const customButtons = document.querySelectorAll('.custom-button');
+
+  customButtons.forEach(button => {
+    const href = button.getAttribute('href');
+    if (href && href === currentPath) {
+      button.classList.add('active');
+    }
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('.card-animate');
 
   const observer = new IntersectionObserver((entries, observer) => {
@@ -538,8 +552,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // JSON de países
   const countries = [
-    { "nombre": "Persona Natural" },
-    { "nombre": "Personal Juridica" },
+    { "nombre": "Persona " },
+    { "nombre": "Empresa" },
 
   ];
 
@@ -554,7 +568,7 @@ document.addEventListener("DOMContentLoaded", () => {
       optionsList.innerHTML = ''; // Limpiar las opciones actuales
       countries.forEach((country) => {
         const option = document.createElement('li');
-        option.classList.add('unique-select-option', 'px-4', 'py-2', 'hover:bg-[#EEEEEE]', 'cursor-pointer', 'text-[16px]', 'text-black');
+        option.classList.add('unique-select-option', 'px-4', 'py-2', 'hover:bg-[#F5F2E3]', 'cursor-pointer', 'text-[16px]', 'text-black');
         option.textContent = country.nombre;
         optionsList.appendChild(option);
 
@@ -570,6 +584,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Cierra el menú
           optionsList.classList.add("hidden");
+          // Cambia el fondo de la opción seleccionada
+          // optionsList.querySelectorAll('.unique-select-option').forEach((opt) => {
+          //   opt.classList.remove('bg-[#F5F2E3]'); 
+          // });
+          // option.classList.add('bg-[#F5F2E3]');
         });
       });
     };
