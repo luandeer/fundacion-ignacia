@@ -1344,12 +1344,12 @@ video {
   max-height: max-content;
 }
 
-.min-h-full{
-  min-height: 100%;
+.min-h-\[100px\]{
+  min-height: 100px;
 }
 
-.min-h-\[659px\]{
-  min-height: 659px;
+.min-h-full{
+  min-height: 100%;
 }
 
 .\!w-full{
@@ -2867,6 +2867,11 @@ video {
   color: #9b4121;
 }
 
+.menu-item .menu-link svg {
+  transition: transform 0.3s ease-in-out;
+  /* Agrega transición */
+}
+
 .menu-item:hover > .menu-link svg {
   transform: rotate(180deg);
 }
@@ -3923,10 +3928,6 @@ video {
     display: none;
   }
 
-  .max-lg\:h-full{
-    height: 100%;
-  }
-
   .max-lg\:gap-16{
     gap: 4rem;
   }
@@ -4148,10 +4149,6 @@ video {
 
   .lg\:h-\[70vh\]{
     height: 70vh;
-  }
-
-  .lg\:min-h-\[659px\]{
-    min-height: 659px;
   }
 
   .lg\:w-1\/2{

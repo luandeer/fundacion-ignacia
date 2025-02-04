@@ -102,6 +102,10 @@
 	color: #9b4121;
 }
 
+.menu-item .menu-link svg {
+	transition: transform 0.3s ease-in-out; /* Agrega transición */
+}
+
 .menu-item:hover > .menu-link svg {
 	transform: rotate(180deg);
 }
