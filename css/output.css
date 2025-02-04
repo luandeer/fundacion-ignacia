@@ -1348,6 +1348,10 @@ video {
   min-height: 100%;
 }
 
+.min-h-\[659px\]{
+  min-height: 659px;
+}
+
 .\!w-full{
   width: 100% !important;
 }
@@ -3919,6 +3923,10 @@ video {
     display: none;
   }
 
+  .max-lg\:h-full{
+    height: 100%;
+  }
+
   .max-lg\:gap-16{
     gap: 4rem;
   }
@@ -4140,6 +4148,10 @@ video {
 
   .lg\:h-\[70vh\]{
     height: 70vh;
+  }
+
+  .lg\:min-h-\[659px\]{
+    min-height: 659px;
   }
 
   .lg\:w-1\/2{
