@@ -7,6 +7,9 @@
 * {
 	font-family: 'Poppins', sans-serif;
 }
+body {
+	background-color: #fffdf4;
+}
 
 .custom-button {
 	cursor: pointer;

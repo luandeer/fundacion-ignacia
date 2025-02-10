@@ -823,6 +823,10 @@ video {
   top: 8%;
 }
 
+.-bottom-1{
+  bottom: -0.25rem;
+}
+
 .\!z-0{
   z-index: 0 !important;
 }
@@ -1284,6 +1288,10 @@ video {
   height: 50vh;
 }
 
+.h-\[54px\]{
+  height: 54px;
+}
+
 .h-\[58px\]{
   height: 58px;
 }
@@ -1391,6 +1399,10 @@ video {
 
 .w-\[26px\]{
   width: 26px;
+}
+
+.w-\[54px\]{
+  width: 54px;
 }
 
 .w-auto{
@@ -1579,6 +1591,11 @@ video {
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-min{
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .flex-1{
@@ -1953,6 +1970,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1)) !important;
 }
 
+.\!border-white{
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1)) !important;
+}
+
 .border-\[\#9F9A8F\]{
   --tw-border-opacity: 1;
   border-color: rgb(159 154 143 / var(--tw-border-opacity, 1));
@@ -1976,6 +1998,11 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.\!bg-\[\#da9278\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(218 146 120 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .\!bg-transparent{
@@ -2093,6 +2120,14 @@ video {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.stroke-blue-500{
+  stroke: #3b82f6;
+}
+
+.stroke-white{
+  stroke: #fff;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -2158,6 +2193,11 @@ video {
 .\!py-\[10px\]{
   padding-top: 10px !important;
   padding-bottom: 10px !important;
+}
+
+.\!py-\[15px\]{
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 .px-1{
@@ -2283,6 +2323,21 @@ video {
 .py-\[80px\]{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.\!py-\[12px\]{
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.\!py-\[13px\]{
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+}
+
+.\!py-\[12\.5px\]{
+  padding-top: 12.5px !important;
+  padding-bottom: 12.5px !important;
 }
 
 .pb-10{
@@ -2487,6 +2542,11 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.\!text-sm{
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 
 .\!font-medium{
@@ -2760,6 +2820,10 @@ video {
 
 * {
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffdf4;
 }
 
 .custom-button {
@@ -3911,6 +3975,14 @@ video {
   fill: #9B4121;
 }
 
+.group:hover .group-hover\:stroke-\[\#9B4121\]{
+  stroke: #9B4121;
+}
+
+.group:hover .group-hover\:stroke-white{
+  stroke: #fff;
+}
+
 @media not all and (min-width: 1280px){
   .max-xl\:\!px-\[14px\]{
     padding-left: 14px !important;
@@ -4288,6 +4360,10 @@ video {
 
   .xl\:gap-\[71px\]{
     gap: 71px;
+  }
+
+  .xl\:\!text-\[15px\]{
+    font-size: 15px !important;
   }
 
   .xl\:\!text-\[16px\]{
