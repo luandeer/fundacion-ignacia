@@ -267,19 +267,41 @@
               data-aos-once="true">Actividades destacadas </h2>
             <div class="hidden md:flex items-center gap-6 justify-center" data-aos="fade-up" data-aos-duration="1000"
               data-aos-once="true">
-              <div class="custom-prev-historia-destacados-impacto !block">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="black" />
+              <div class="custom-prev-historia-destacados-impacto !block group">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="transition-all duration-300">
+
+                  <!-- Círculo de fondo (solo visible en hover) -->
+                  <circle cx="27" cy="27" r="27" fill="transparent"
+                    class="transition-all duration-300 group-hover:fill-[#9B4121]" />
+
+                  <!-- Borde del círculo -->
+                  <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="black"
+                    class="transition-all duration-300 group-hover:stroke-[#9B4121]" />
+
+                  <!-- Flecha -->
                   <path d="M18.834 27L25.834 20M18.834 27L25.834 34M18.834 27H35.1673" stroke="black"
-                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"
+                    class="transition-all duration-300 group-hover:stroke-white" />
                 </svg>
               </div>
 
-              <div class="custom-next-historia-destacados-impacto !block">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="27" cy="27" r="26.5" stroke="black" />
+              <div class="custom-next-historia-destacados-impacto !block group">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="transition-all duration-300">
+
+                  <!-- Círculo de fondo (solo visible en hover) -->
+                  <circle cx="27" cy="27" r="27" fill="transparent"
+                    class="transition-all duration-300 group-hover:fill-[#9B4121]" />
+
+                  <!-- Borde del círculo -->
+                  <circle cx="27" cy="27" r="26.5" stroke="black"
+                    class="transition-all duration-300 group-hover:stroke-[#9B4121]" />
+
+                  <!-- Flecha -->
                   <path d="M35.166 27L28.166 20M35.166 27L28.166 34M35.166 27H18.8327" stroke="black"
-                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"
+                    class="transition-all duration-300 group-hover:stroke-white" />
                 </svg>
               </div>
             </div>
