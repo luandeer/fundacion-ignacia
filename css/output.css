@@ -775,6 +775,10 @@ video {
   left: 50%;
 }
 
+.left-full{
+  left: 100%;
+}
+
 .right-0{
   right: 0px;
 }
@@ -825,10 +829,6 @@ video {
 
 .top-\[8\%\]{
   top: 8%;
-}
-
-.left-full{
-  left: 100%;
 }
 
 .\!z-0{
@@ -1023,6 +1023,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-2\.5{
+  margin-bottom: 0.625rem;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -1113,10 +1117,6 @@ video {
 
 .mb-\[64px\]{
   margin-bottom: 64px;
-}
-
-.mb-\[70px\]{
-  margin-bottom: 70px;
 }
 
 .mb-\[80px\]{
@@ -1239,6 +1239,26 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.size-10{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size-4{
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.size-6{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .\!h-\[50px\]{
   height: 50px !important;
 }
@@ -1270,6 +1290,10 @@ video {
 
 .h-\[200px\]{
   height: 200px;
+}
+
+.h-\[260px\]{
+  height: 260px;
 }
 
 .h-\[27px\]{
@@ -1570,6 +1594,10 @@ video {
 
 .max-w-\[686px\]{
   max-width: 686px;
+}
+
+.max-w-\[700px\]{
+  max-width: 700px;
 }
 
 .max-w-\[766px\]{
@@ -2000,9 +2028,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.\!bg-\[\#da9278\]{
+.\!bg-\[\#9B4121\]{
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(218 146 120 / var(--tw-bg-opacity, 1)) !important;
+  background-color: rgb(155 65 33 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .\!bg-transparent{
@@ -2104,11 +2132,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.\!bg-\[\#9B4121\]{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(155 65 33 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .bg-gradient-to-t{
@@ -3848,7 +3871,7 @@ body {
 @keyframes slideFadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(60px);
   }
 
   to {
@@ -3860,7 +3883,7 @@ body {
 /* Clase para aplicar la animación */
 
 .animate-banner {
-  animation: slideFadeIn 0.8s ease-out forwards;
+  animation: slideFadeIn 0.7s ease-out forwards;
 }
 
 @keyframes dibujar {
