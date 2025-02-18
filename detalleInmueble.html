@@ -515,19 +515,41 @@
           <h2 class="font-semibold text-start text-[24px] md:text-[30px] !leading-tight">Otros eventos que te pueden
             interesar </h2>
           <div class="hidden md:flex items-center gap-6 justify-center">
-            <div class="custom-prev-historia-actividad-evento !block">
-              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="black" />
+            <div class="custom-prev-historia-actividad-evento !block group">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="transition-all duration-300">
+
+                <!-- Círculo de fondo (solo visible en hover) -->
+                <circle cx="27" cy="27" r="27" fill="transparent"
+                  class="transition-all duration-300 group-hover:fill-[#9B4121]" />
+
+                <!-- Borde del círculo -->
+                <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="black"
+                  class="transition-all duration-300 group-hover:stroke-[#9B4121]" />
+
+                <!-- Flecha -->
                 <path d="M18.834 27L25.834 20M18.834 27L25.834 34M18.834 27H35.1673" stroke="black"
-                  stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"
+                  class="transition-all duration-300 group-hover:stroke-white" />
               </svg>
             </div>
 
-            <div class="custom-next-historia-actividad-evento !block">
-              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="27" cy="27" r="26.5" stroke="black" />
+            <div class="custom-next-historia-actividad-evento !block group">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="transition-all duration-300">
+
+                <!-- Círculo de fondo (solo visible en hover) -->
+                <circle cx="27" cy="27" r="27" fill="transparent"
+                  class="transition-all duration-300 group-hover:fill-[#9B4121]" />
+
+                <!-- Borde del círculo -->
+                <circle cx="27" cy="27" r="26.5" stroke="black"
+                  class="transition-all duration-300 group-hover:stroke-[#9B4121]" />
+
+                <!-- Flecha -->
                 <path d="M35.166 27L28.166 20M35.166 27L28.166 34M35.166 27H18.8327" stroke="black"
-                  stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"
+                  class="transition-all duration-300 group-hover:stroke-white" />
               </svg>
             </div>
           </div>
@@ -538,67 +560,100 @@
           <div class="carruselActividad !w-full overflow-hidden">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="flex flex-col gap-2">
-                  <img src="img/impacto/impacto1.png"
-                    class="object-top aspect-square object-cover h-[300px]  rounded-[20px]" alt="">
+                <a href="/detalleInmueble.html" class="group flex flex-col ">
+                  <div class="h-[300px] mb-3 overflow-hidden w-full rounded-[20px]"> <img
+                      src="img/detalleInmueble/inmuebleFotos/20190502105832 1.png"
+                      class="aspect-square h-full w-full object-cover object-top rounded-[20px] transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      alt=""></div>
+                  <h3 class="title-card mb-2">Oficina administrativa - Piso 5</h3>
 
-                  <div class="flex items-center gap-4 mt-[20px] mb-2">
-                    <span class="bg-[#FFEAA4] px-4 py-1.5 text-center rounded-full font-medium">
-                      Eventos
-                    </span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/calendar.svg" alt="">23
-                      Julio</span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/reloj.svg" alt="">3 min</span>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] "> <img
+                      src="img/detalleInmueble/location.svg" alt="">Avda. Camino Real  No.355 - San Isidro</p>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] mb-4"> <img
+                      src="img/detalleInmueble/metrocuadroicon.svg" alt="">773.90m2 a 1028.83m2
+                  </p>
+                  <!-- <a href=""
+                    class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
+                    Leer más</a> -->
+                  <div
+                    class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !py-[10px] !px-[16px] !text-[15px] xl:!text-[16px]   ">
+                    <span>Más información</span>
+                    <span></span>
                   </div>
-                  <h3 class="title-card mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
 
-                  <a href=""
-                    class="boton-fundacion-line-rounded !font-medium  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                    Leer más</a>
-
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="flex flex-col gap-2">
-                  <img src="img/impacto/impacto1.png"
-                    class="object-top aspect-square  h-[300px] object-cover  rounded-[20px]" alt="">
+                <a href="/detalleInmueble.html" class="group flex flex-col ">
+                  <div class="h-[300px] mb-3 overflow-hidden w-full rounded-[20px]"> <img
+                      src="img/detalleInmueble/inmuebleFotos/20190502105832 1.png"
+                      class="aspect-square h-full w-full object-cover object-top rounded-[20px] transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      alt=""></div>
+                  <h3 class="title-card mb-2">Oficina administrativa - Piso 5</h3>
 
-                  <div class="flex items-center gap-4 mt-[20px] mb-2">
-                    <span class="bg-[#FFEAA4] px-4 py-1.5 text-center rounded-full font-medium">
-                      Eventos
-                    </span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/calendar.svg" alt="">23
-                      Julio</span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/reloj.svg" alt="">3 min</span>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] "> <img
+                      src="img/detalleInmueble/location.svg" alt="">Avda. Camino Real  No.355 - San Isidro</p>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] mb-4"> <img
+                      src="img/detalleInmueble/metrocuadroicon.svg" alt="">773.90m2 a 1028.83m2
+                  </p>
+                  <!-- <a href=""
+                    class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
+                    Leer más</a> -->
+                  <div
+                    class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !py-[10px] !px-[16px] !text-[15px] xl:!text-[16px]   ">
+                    <span>Más información</span>
+                    <span></span>
                   </div>
-                  <h3 class="title-card mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
 
-                  <a href=""
-                    class="boton-fundacion-line-rounded !font-medium  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                    Leer más</a>
-
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="flex flex-col gap-2">
-                  <img src="img/impacto/impacto1.png"
-                    class="object-top aspect-square h-[300px]  object-cover  rounded-[20px]" alt="">
+                <a href="/detalleInmueble.html" class="group flex flex-col ">
+                  <div class="h-[300px] mb-3 overflow-hidden w-full rounded-[20px]"> <img
+                      src="img/detalleInmueble/inmuebleFotos/20190502105832 1.png"
+                      class="aspect-square h-full w-full object-cover object-top rounded-[20px] transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      alt=""></div>
+                  <h3 class="title-card mb-2">Oficina administrativa - Piso 5</h3>
 
-                  <div class="flex items-center gap-4 mt-[20px] mb-2">
-                    <span class="bg-[#FFEAA4] px-4 py-1.5 text-center rounded-full font-medium">
-                      Eventos
-                    </span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/calendar.svg" alt="">23
-                      Julio</span>
-                    <span class="flex items-center gap-2"><img src="img/actividades/reloj.svg" alt="">3 min</span>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] "> <img
+                      src="img/detalleInmueble/location.svg" alt="">Avda. Camino Real  No.355 - San Isidro</p>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] mb-4"> <img
+                      src="img/detalleInmueble/metrocuadroicon.svg" alt="">773.90m2 a 1028.83m2
+                  </p>
+                  <!-- <a href=""
+                    class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
+                    Leer más</a> -->
+                  <div
+                    class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !py-[10px] !px-[16px] !text-[15px] xl:!text-[16px]   ">
+                    <span>Más información</span>
+                    <span></span>
                   </div>
-                  <h3 class="title-card mb-2">Lorem ipsum dolor sit amet consectetur.</h3>
 
-                  <a href=""
-                    class="boton-fundacion-line-rounded !font-medium  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
-                    Leer más</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/detalleInmueble.html" class="group flex flex-col ">
+                  <div class="h-[300px] mb-3 overflow-hidden w-full rounded-[20px]"> <img
+                      src="img/detalleInmueble/inmuebleFotos/20190502105832 1.png"
+                      class="aspect-square h-full w-full object-cover object-top rounded-[20px] transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      alt=""></div>
+                  <h3 class="title-card mb-2">Oficina administrativa - Piso 5</h3>
 
-                </div>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] "> <img
+                      src="img/detalleInmueble/location.svg" alt="">Avda. Camino Real  No.355 - San Isidro</p>
+                  <p class="font-inter text-[16px] flex items-center gap-2 text-[#5E5E5E] mb-4"> <img
+                      src="img/detalleInmueble/metrocuadroicon.svg" alt="">773.90m2 a 1028.83m2
+                  </p>
+                  <!-- <a href=""
+                    class="boton-fundacion-line-rounded  !py-[10px] !px-[16px] !text-black !border-black  w-min whitespace-nowrap">
+                    Leer más</a> -->
+                  <div
+                    class="animated-button-outline !w-min whitespace-nowrap !bg-transparent !py-[10px] !px-[16px] !text-[15px] xl:!text-[16px]   ">
+                    <span>Más información</span>
+                    <span></span>
+                  </div>
+
+                </a>
               </div>
 
 
