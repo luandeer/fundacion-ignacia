@@ -859,6 +859,10 @@ video {
   z-index: 20;
 }
 
+.z-\[15\]{
+  z-index: 15;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -4174,6 +4178,10 @@ body {
 
   .md\:text-\[50px\]{
     font-size: 50px;
+  }
+
+  .md\:text-\[16px\]{
+    font-size: 16px;
   }
 
   .md\:font-medium{
